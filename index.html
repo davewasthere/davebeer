@@ -6,18 +6,17 @@ description: Personal blog of Dave Beer. Mostly a rambling collection, but hopef
 
 <h1>Dave Beer</h1>
 
-<div class="content">
+<p>Personal blog of <a href="https://plus.google.com/104965742247679291258?rel=author">Dave Beer</a></p>
 
-<p>Personal blog of <a href="http://profiles.google.com/davebeer" rel="me">Dave Beer</a></p>
+  {% for post in site.posts limit:30 %}
 
-<div class="related">
-  <ul>
-  {% for post in site.posts %}
-    <li>
-      <span>{{ post.date | date: "%d %B %Y" }}</span> <a href="{{ post.url }}/">{{ post.title }}</a>
-    </li>
+        <div id="post">
+            <div class="postdate">{{ page.date | date: "%d %B %Y" }}</div>
+            <h1>{{ page.title }}</h1>
+
+            {{content}}
+            </div>
+        </div>
+
   {% endfor %}
-  </ul>
-  </div>
 
-</div>
