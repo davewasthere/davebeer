@@ -14,6 +14,6 @@ It's hard sometimes to triage stuff when you're in clear-out mode. It's all too 
 
 Relevancy is a good criteria. If I've used it in the past twelve months, then it's probably something relevant/useful. That spare arabic keyboard then probably needs to be donated/binned.
 
-Is it something that enriches my life somehow? I would keep a painting that I liked. Books, my one big weakness, are also something that I consider enrich my life. I have a cupboard full of ones, written by my favourite authors, that I read and re-read.
+Is it something that enriches my life somehow? I would keep a painting that I liked. Books, my one big weakness, are also something that I consider enrich my life. I have a cupboard full of books, written by my favourite authors, that I read and re-read.
 
 What other criteria should you use when making a decision to keep or get rid of something? And how much 'stuff' is enough? For three or four months each year, I effectively live out of a suitcase and don't find it too restricting. Does that make everything I've got at home superfluous?

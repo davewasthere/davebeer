@@ -4,7 +4,7 @@ title: There's no excuse for being bored
 ---
 It's just incredible the resources that are available these days. I've got a lot of interests and it's possible to learn so much about all of them online now.
 
-While research quantitative finance, I found this guy who is planning on doing his [own Masters in Financial Engineering](http://blog.hiremebecauseimsmart.com/post/2860511335/design-your-own-mfe). But his post illustrates a good point, you don't need to go to university to learn whatever you want. (Well, you do if you want the piece of paper at the end)
+While research quantitative finance, I found a guy who was planning on doing his own Masters in Financial Engineering. But his approach was that you don't need to go to university to learn whatever you want. (Well, you do if you want the piece of paper at the end)
 
 [Khan academy](http://www.khanacademy.org/) has been interesting to play with. I've been brushing up on my admittedly rusting mathematics there. Salman Khan has done an amazing job creating the videos and his naration and pace of teaching is excellent. The range of subjects is amazing and getting more expansive all the time.
 

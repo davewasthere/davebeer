@@ -4,7 +4,7 @@ title: Road rage and avoiding the daily commute
 ---
 I had the most amazing experience the other day. Needed to meet a friend in Auckland City and was figuring out how long it'd take me to drive there from Beachlands. I hate being late when I meet people and Auckland traffic can be diabolical at times. I find it very hard to judge how long it'll take to get from point A to point B sometimes.
 
-However on this day I had another option. Just a few kays away was Pineharbour, who run a regular ferry service to the City Centre. It also had a ferry leaving at just the right time so I'd make it into the city for my lunch appointment. So rather than drive, have hassles with parking, possibly getting lost (my navigation around Auckland is occasionally a little random at times) and getting stressed over all the idiot drivers on the road, I decided the ferry made sense.
+However, on this day, I had another option. Just a few kays away was Pineharbour, who run a regular ferry service to the City Centre. It also had a ferry leaving at just the right time so I'd make it into the city for my lunch appointment. So rather than drive, have hassles with parking, possibly getting lost (my navigation around Auckland is occasionally a little random at times) and getting stressed over all the idiot drivers on the road, I decided the ferry made sense.
 
 Free parking was a nice perk, and it helped that it was a gorgeous sunny day. Someone had left the paper and it was a nice chance for a comfortable sit down and catch up on local events. Forty minutes later, we're pulling up at the dock in the city. Brilliant!
 
