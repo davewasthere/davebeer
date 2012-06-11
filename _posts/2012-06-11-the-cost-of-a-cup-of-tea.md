@@ -13,7 +13,7 @@ Sure, there'll be some differences. There's probably a lot of waste heat being l
 Without boring you with the methodology, here are the results:
 
 <table>
-	<thead><tr><th>Method</th><th>kWh</th><th></th></tr></thead>
+	<thead><tr><th>Method</th><th>kWh</th><th>Cost</th></tr></thead>
 	<tbody>
 		<tr><td>Electric Kettle</td><td>0.1</td><td>0.59p</td></tr>
 		<tr><td>Pot on gas hob</td><td>0.167</td><td>1.45p</td></tr>
