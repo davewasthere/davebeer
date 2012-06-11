@@ -87,7 +87,7 @@ blockquote {font-style: italic; color: #666;}
 .nextprev .prev {float: left;}
 .clearall {clear: both;}
 
-td {border: 1px solid #eee;}
+td {border: 1px solid #eee; padding: 0.5em;}
 
 
 
