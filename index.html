@@ -8,13 +8,11 @@ description: Personal blog of Dave Beer. Mostly a rambling collection, but hopef
 
 <p>Personal blog of <a href="https://plus.google.com/104965742247679291258?rel=author">Dave Beer</a></p>
 
-  {% for post in site.posts limit:30 %}
-
-<div class="post">
-    <div class="postdate">{{ post.date | date: "%d %B %Y" }}</div>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <div class="postbody">{{post.content}}</div>
-</div>
-
+  <ul>
+  {% for post in site.posts %}
+    <li>
+      <span>{{ post.date | date: "%d %B %Y" }}</span> <a href="{{ post.url }}/">{{ post.title }}</a>
+    </li>
   {% endfor %}
+  </ul>
 
