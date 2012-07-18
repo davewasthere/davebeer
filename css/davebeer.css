@@ -81,6 +81,7 @@ h2 a:hover {color: #669;}
 .postdate {color: #999;}
 .related ul {list-style-type: none; margin: 0; padding: 0;}
 .related ul li span {float:right;}
+.related ul li {margin-bottom: 0.5em;}
 blockquote {font-style: italic; color: #666;}
 .nextprev {}
 .nextprev .next {float: right; text-align: right;}
