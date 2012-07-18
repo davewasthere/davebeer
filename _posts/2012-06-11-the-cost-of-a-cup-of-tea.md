@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The cost of a cup of tea
+description: What I do in my spare time... work out the cost of a cup of tea and the difference between using electricity or gas to make it.
 ---
 This is the sort of thing that occupies my brain some days...
 
