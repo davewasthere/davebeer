@@ -1,8 +1,2 @@
 permalink:  /posts/:title
 auto:       true
-prose:
-	metadata:
-    	"_posts" : |
-        layout: post
-        title: "Title"
-        description: "Description"
