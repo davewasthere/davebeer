@@ -13,4 +13,4 @@ But I can understand the desire to know exactly how much something will cost, ev
 
 Whether that is enough to win a project or not, I guess we'll see. But I'm happier not getting the work rather than having to work on a fixed price project with vague initial specs and the ensuing contract negotiation that happens afterwards.
 
-_Note_: I've been a bit busy the past couple of months, so haven't been able to write. Was travelling Europe by bike for a bit (and went low-tech). But have also been busy on a project for the Olympics (a seating application that manages VIP hospitality packages). Hopefully normal service will resume now...
+> **Note**: _I've been a bit busy the past couple of months, so haven't been able to write. Was travelling Europe by bike for a bit (and went low-tech). But have also been busy on a project for the Olympics (a seating application that manages VIP hospitality packages). Hopefully normal service will resume now..._
