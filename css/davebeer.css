@@ -83,7 +83,7 @@ h2 a:hover {color: #669;}
 h3 {font-size: 1.1em; }
 
 .post {margin-bottom: 1em;}
-.postdate {color: #999;}
+.postdate {color: #999; float: right; margin: 1em 1em 0 0;}
 
 .related ul {list-style-type: none; margin: 0; padding: 0;}
 .related ul li span {float:right;}
