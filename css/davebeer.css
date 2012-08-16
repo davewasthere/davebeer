@@ -89,7 +89,9 @@ h3 {font-size: 1.1em; }
 .related ul li span {float:right;}
 .related ul li {margin-bottom: 0.5em;}
 
-blockquote {font-style: italic; color: #666;}
+blockquote:before { font-family:Georgia, Serif; content: "\201C"; font-size: 8em; float:left; position:absolute; margin-top: -0.2em; margin-left: -0.5em; color: #ccc;}
+blockquote {font-style: italic; color: #666; margin: 0; padding: 0 4em;}
+blockquote:after { font-family:Georgia, Serif; content: "\201E"; font-size: 8em; float:right; margin-top: -1em; margin-right: -0.4em; color: #ccc;}
 
 .nextprev {}
 .nextprev .next {float: right; text-align: right;}

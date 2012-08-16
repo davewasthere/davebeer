@@ -3,11 +3,18 @@
     width: 120px;
     float: left;
     margin: 1em;
+    min-height: 100%;
 }
 
 #sidebar img {float: none; margin: 0.5em;}
 
 #main
 {
+    float: right;
+    max-width: 650px;
+}
 
+footer
+{
+    clear:both;
 }
