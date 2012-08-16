@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Forty is fast approaching
+description: I lament about getting older. That said, there isn't much I can do about it...
 ---
 Am not sure how I feel about it, but I'm turning 40 in a few weeks. I still remember going to my father's fourtieth birthday party (and driving him and Grandad home afterwards). And here's me with no kids, single and still larking about the planet without looking like I'm slowing down.
 

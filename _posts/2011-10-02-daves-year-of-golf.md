@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dave's year of golf
+description: Born over a few beers, I wonder about taking a year off to play golf. Sounds like fun!
 ---
 I've been thinking a bit more today about an idea I'd talked over with my Uncle Ken. Our thought was to spend a year doing nothing but playing golf. Since then, I've found out about [The Dan Plan](http://thedanplan.com) where one guy is testing the hypothesis that it takes ten thousand hours to become good at something.
 

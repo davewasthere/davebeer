@@ -1,6 +1,7 @@
 ---
 layout: post
 title: I've got a new training target
+description: It's always good to have something to aim for...
 ---
 Having done my first triathlon a couple of weeks ago, I need a new target to aim for. Fortunately I got a skype message from my Uncle yesterday. He's doing the [Lake Taupo Cycle Challenge](http://www.cyclechallenge.com) and has a spare bike. So that gives me my new target.
 

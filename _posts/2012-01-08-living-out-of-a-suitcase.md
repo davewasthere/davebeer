@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Living out of a suitcase
+description: Sure, I like all my 'stuff'. But after a bit of travelling, I find I'm just as happy with very little. So why not get rid of all the extra crap?
 ---
 I'm about six weeks into my Summer down under. Been wandering around a little, catching up with family and friends, enjoying Christmas and seeing the New Year in. Now I'm about to head down to Wellington for a spot of networking and seeing more friends down there.
 

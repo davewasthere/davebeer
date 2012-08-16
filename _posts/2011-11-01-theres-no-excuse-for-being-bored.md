@@ -1,6 +1,7 @@
 ---
 layout: post
 title: There's no excuse for being bored
+description: So much to learn, so little time. What a wealth of knowledge we have available to us these days
 ---
 It's just incredible the resources that are available these days. I've got a lot of interests and it's possible to learn so much about all of them online now.
 

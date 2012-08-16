@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  When reality catches up with the US Dollar
+description: I really know next to nothing about finance (the more I read the more I realise how little I know). But I do wonder whether we'll claw our way out of this financial crisis
 ---
 I've just been reading Peter Schiff's book [Crash Proof 2.0: How to Profit From the Economic Collapse](http://www.amazon.co.uk/gp/product/047047453X/ref=as_li_ss_tl?ie=UTF8&tag=davewasthere-21&linkCode=as2&camp=1634&creative=19450&creativeASIN=047047453X). It makes for some thought-provoking reading. Not that there's anything completely new in there, but his analogies make a lot of sense out of a fairly complex financial situation.
 

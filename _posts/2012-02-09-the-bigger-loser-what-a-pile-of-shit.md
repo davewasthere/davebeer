@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The biggest loser. What a pile of shit!
+description: I don't really watch a lot of telly, so I'm normally a little disappointed when I do what something. But in this case, I was utterly appalled.
 ---
 I don't really watch television, but last night happened to watch an episode of _The biggest loser_. What an absolute pile of steaming crap that was! It seems to be nothing more than a boot camp for fatties, with a bit of reality-style game show thrown in.
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: On making myself unemployable
+description: That age of question of working to live, or living to work. And thinking about doing something 'different'.
 ---
 
 I'm nearing the end of my contract with a client and am considering what to do next. The team I work with is amazing, but I'm unenthused by the product and am really looking forward to a new challenge.

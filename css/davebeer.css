@@ -66,31 +66,37 @@ td { vertical-align: top; }
    Author: Dave Beer
    ========================================================================== */
 
+body { font-family: Calibri, Verdana, Sans-Serif; font-size: 16px; background-color: #eee;}
+header {float: left;}
+#container {max-width:760px; margin: 0 auto;text-align:left;}
+#main {padding: 1px 1em; margin: 0; background-color: #fff; min-height: 400px;}
+#sidebar {background-color: #ddd; padding: 0.5em; min-height: 120px; font-size: smaller;}
+#sidebar img {float: left; margin-right: 1em;}
+#sidebar h2 {margin: 0;}
+#sidebar p {margin: 0;}
 
-body { font-family: Verdana, Sans-Serif; background-color: #fff; font-size: 16px;}
-header {float: left; display: none;}
-#container {max-width:800px; margin: 0 auto;text-align:left;}
-#main {margin: 0 1em;}
-
-h1, h2, h3{font-family: Georgia, Serif}
-h2 {margin: 0;}
+h1 {font-size: 1.5em;}
+h1, h2, h3{font-family: Georgia, Serif;margin: 0.5em 0;}
+h2 {font-size: 1.3em; }
 h2 a {text-decoration: none; color: #666;}
 h2 a:hover {color: #669;}
+h3 {font-size: 1.1em; }
 
 .post {margin-bottom: 1em;}
 .postdate {color: #999;}
+
 .related ul {list-style-type: none; margin: 0; padding: 0;}
 .related ul li span {float:right;}
 .related ul li {margin-bottom: 0.5em;}
+
 blockquote {font-style: italic; color: #666;}
+
 .nextprev {}
 .nextprev .next {float: right; text-align: right;}
 .nextprev .prev {float: left;}
 .clearall {clear: both;}
 
 td {border: 1px solid #eee; padding: 0.5em;}
-
-
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }

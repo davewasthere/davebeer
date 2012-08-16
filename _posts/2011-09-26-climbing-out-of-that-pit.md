@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Climbing out of that pit
+description: Letting other people affect how you feel. Yes, I know it's all internal, but sometimes you can't help it.
 ---
 
 It's funny how bad you can let someone else make you feel. There's no real reason for it. Why should someone else's behaviour have an effect on me?

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Getting upgraded when you fly
+description: I very rarely buy business class tickets, but there are some tricks to get upgraded fairly regularly.
 ---
 Just had this conversation with a few people today while out for some work drinks. Our CEO came over and was talking about her upcoming holiday. She's very tall, so feels it's pretty much essential to pay for business class when flying long haul.
 

@@ -1,0 +1,13 @@
+#sidebar
+{
+    width: 120px;
+    float: left;
+    margin: 1em;
+}
+
+#sidebar img {float: none; margin: 0.5em;}
+
+#main
+{
+
+}

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: If you seek tranquillity, do less
+description: I ruminate on what is and isn't necessary
 ---
 I'm reading Meditations by Marcus Aurelius and really enjoying it. But one bit has struck me as particularly thought provoking.
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Another summer down-under
+description: Once again, I head away for my winter migration. But for some reason this one feels different
 ---
 Feels like the end of an era now. I've just finished a contract at a client site having worked there on and off for the last three and a half years. Feels strange to know that I won't be going back. (Although I might have said that before - and never say never seems to be a theme with my life)
 

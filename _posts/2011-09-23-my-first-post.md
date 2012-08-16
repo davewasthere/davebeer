@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hosting your blog with GitHub pages
+description: Having found wordpress both great, but also a little slow/annoying/clumsy to extend, I decided to go back to static pages with a twist. You know it makes sense...
 ---
 
 Okay, [GitHub Pages](http://pages.github.com/) is pretty amazing. [Jekyll](https://github.com/mojombo/jekyll/wiki) just makes it even more magic, as it will apply templates to your posts giving you plenty of control over formatting, but allowing you to easily change your site.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Went fishing, didn't catch a thing
+description: But perhaps that's not the point? I definitely had a lot of fun
 ---
 Been out fishing a few times this week, but last night was a lot of fun, just fruitless.
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Road rage and avoiding the daily commute
+description: I'm so lucky I've avoided commuting all these years. I don't think I could handle it
 ---
 I had the most amazing experience the other day. Needed to meet a friend in Auckland City and was figuring out how long it'd take me to drive there from Beachlands. I hate being late when I meet people and Auckland traffic can be diabolical at times. I find it very hard to judge how long it'll take to get from point A to point B sometimes.
 

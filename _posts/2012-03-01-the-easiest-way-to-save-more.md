@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The easiest way to save more
+description: A simple approach to saving without feeling like you're doing without
 ---
 I just watched a [very interesting video from TEDTalks about Behavioural Finance](http://www.youtube.com/embed/gzcw_02ZB1o).
 

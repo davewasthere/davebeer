@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Problems navigating Sydney's CityRail network
+description: Don't get me wrong, I like CityRail. Only I found it less than ideal to find my way around. Definitely room for improvement
 ---
 I'm spending a few weeks in Sydney and something I've found glaringly obvious is how difficult it is to find your way around. I'm not inexperienced at travelling. I've used the Metro/Rail systems in Moscow, London, Singapore, New York, Barcelona, Auckland *cough* (hey, we're improving...), Manila, Taipei, Hong Kong, Melbourne, Paris and Geneva (and others, but those are the highlights). And you know what? I've found every single one easier to navigate than Sydney. (Bejing only had two lines operating when I visited and Dubai didn't have a metro when I lived there.)
 

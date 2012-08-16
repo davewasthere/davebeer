@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Microsoft say Bing as good as Google? Not yet at least.
+description: Just a quick comparison between search engines.
 ---
 It looks as though Bing still need to sort out their indexing.
 

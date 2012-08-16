@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Mindfulness and why I've not yet gotten a smartphone
+description: Sure, 'stuff' is nice. But do we really need it?
 ---
 I'm still wandering around with just my <a href="http://en.wikipedia.org/wiki/Sony_Ericsson_W810" rel="nofollow">Sony Ericsson W810i</a> for a phone. I get a little bit of stick from friends who possibly don't get why I've not yet 'upgraded' to a smartphone considering how much of a geek I can be in other areas.
 

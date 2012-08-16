@@ -10,6 +10,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   
   <link rel="stylesheet" href="/css/davebeer.css">
+  <link href="/css/enhanced.css" rel="stylesheet" type="text/css" media="screen and (min-width: 40.5em)" />
+<!--[if (lt IE 9)&(!IEMobile)]>
+  <link href="/css/enhanced.css" rel="stylesheet" type="text/css" />
+<![endif]-->
 
 {% if page.previous.url %} 
   <link rel="prev" href="{{page.previous.url}}">
@@ -28,19 +32,32 @@
 <body>
 
   <div id="container">
+
     <header>
 
-        <div><img src="http://www.gravatar.com/avatar/c9711972512e0217bb1663679b91a899" style="width: 80px; height: 80px;"/></div>
-
     </header>
+
+    <div id="sidebar">
+
+        <img alt="Dave Beer" src="http://www.gravatar.com/avatar/c9711972512e0217bb1663679b91a899?s=100" style="width: 100px; height: 100px;"/>
+
+        <h1>Dave Beer</h1>
+
+        <h2>About</h2>
+        <p>This is my little space on the web</p>
+    
+    </div>
+
     <div id="main" class="content">
     
         {{ content }}
 
     </div>
+
     <footer>
 
     </footer>
+
   </div>
 
   <script type="text/javascript">

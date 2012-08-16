@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Travel Hack: No jet-lag after fasting"
+description: A technique to reset your body clock while travelling long haul
 ---
 A few days ago I flew from London to Auckland. That's a very long flight and a large time difference. But this time I decided to try something that I'd read about quite a lot, which is resetting your body clock by fasting.
 

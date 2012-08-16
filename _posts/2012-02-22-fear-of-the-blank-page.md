@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Fear of the blank page
+description: What stops us from engaging in creative endeavours? I wonder why I stopped drawing.
 ---
 I'm not sure when it happened, but at some stage I lost that easy ability to draw. I used to draw a lot as a child, but find it hard to even start now.
 

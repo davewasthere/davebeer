@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Comparing life to golf
+description: Bit of a Zen/Buddhist live in the moment contemplation
 ---
 There's something pure about golf. It can be bloody frustrating at times, especially now when my swing has been disected and I'm trying to get used to a new way of playing. But one of the main things that intrigues me about the game is the mental aspect.
 

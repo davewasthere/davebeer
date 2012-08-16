@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Oh my god, it's everywhere!
+description: There is something that is invading. I've only really noticed how prevalent it is!
 ---
 I noticed something kind of beautiful when I was landing at JFK the other day, returning home after a couple of weeks in Belize.
 

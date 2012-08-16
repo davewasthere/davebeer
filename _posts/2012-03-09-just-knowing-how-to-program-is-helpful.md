@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Just knowing how to program is helpful
+description: In the future, will everyone need to program? Similar to everyone being able to read and write now. It's possible it'll be an essential skill in future life.
 ---
 I've had a bit of insight into how non-developers use computers in support of their job. One example in particular was of a Finance company who offer quite a sophisticated service for their clients, but the back-end is anything but.
 

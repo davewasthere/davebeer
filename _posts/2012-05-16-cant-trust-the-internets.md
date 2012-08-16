@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Can't trust the internets
+description: Scams abound on the internet. I've been caught out a couple of times and yet I feel I'm pretty savvy on the whole. There must be a lot of it going on...
 ---
 I've lost my mojo a little lately. Feel like I got sucked in by two online purchases. One was a laptop which has a fault whenever I try and run it off battery. I had a bad vibe about it from the start, but persisted with the sale for some unknown reason. Now disputing it with ebay, so we'll see how that goes.
 

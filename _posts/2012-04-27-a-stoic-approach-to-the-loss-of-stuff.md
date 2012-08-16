@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A stoic approach to the loss of 'stuff'.
+description: Appreciating what you've got and dealing with loss of things
 ---
 I've lost a few things recently. But one of them hurt more than the rest.
 
