@@ -1,20 +1,31 @@
-#sidebar
+#container
 {
-    width: 120px;
-    float: left;
-    margin: 1em;
-    min-height: 100%;
+    background-color: #fff;
 }
 
-#sidebar img {float: none; margin: 0.5em;}
+#sidebar
+{
+    width: 140px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+#sidebar img {float:none;margin-bottom: 1em;}
 
 #main
 {
+    max-width: 620px;
     float: right;
-    max-width: 650px;
 }
+
+#main:after
+{
+    clear: both;
+}
+
 
 footer
 {
-    clear:both;
+
 }
