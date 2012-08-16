@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Happiness and hedonic adaptation
-description: Why is it that celebrities seem so unhappy, yet we think they should be exstatic living such a priviledged life.
+description: Why is it that celebrities seem so unhappy, yet we think they should be exstatic living such a priviledged life?
 ---
 
 I've been reading [A Guide to the Good Life : The Ancient Art of Stoic Joy](http://www.amazon.co.uk/gp/product/B0040JHNQG/ref=as_li_ss_tl?ie=UTF8&tag=davewasthere-21&linkCode=as2&camp=1634&creative=19450&creativeASIN=B0040JHNQG) lately and really enjoying the ideas behind Stoic philosophy.

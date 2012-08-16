@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Fixed priced quotes for Agile projects
-description: The difficulting of selling Agile to a client who wants a fixed price
+description: The difficulty in selling Agile to a client who wants a fixed price
 published: true
 ---
 
