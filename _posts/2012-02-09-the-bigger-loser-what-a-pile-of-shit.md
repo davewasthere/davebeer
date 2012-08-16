@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: The biggest loser. What a pile of shit!
 description: I don't really watch a lot of telly, so I'm normally a little disappointed when I do what something. But in this case, I was utterly appalled.
 ---

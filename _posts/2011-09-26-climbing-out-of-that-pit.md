@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Climbing out of that pit
 description: Letting other people affect how you feel. Yes, I know it's all internal, but sometimes you can't help it.
 ---

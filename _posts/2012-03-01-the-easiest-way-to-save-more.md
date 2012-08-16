@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: The easiest way to save more
 description: A simple approach to saving without feeling like you're doing without
 ---

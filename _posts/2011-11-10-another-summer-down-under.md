@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  Another summer down-under
 description: Once again, I head away for my winter migration. But for some reason this one feels different
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: A stoic approach to the loss of 'stuff'.
 description: Appreciating what you've got and dealing with loss of things
 ---

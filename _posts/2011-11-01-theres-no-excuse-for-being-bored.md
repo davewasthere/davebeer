@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: There's no excuse for being bored
 description: So much to learn, so little time. What a wealth of knowledge we have available to us these days
 ---

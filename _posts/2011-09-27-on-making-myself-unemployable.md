@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: On making myself unemployable
 description: That age of question of working to live, or living to work. And thinking about doing something 'different'.
 ---

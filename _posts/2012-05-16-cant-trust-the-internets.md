@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Can't trust the internets
 description: Scams abound on the internet. I've been caught out a couple of times and yet I feel I'm pretty savvy on the whole. There must be a lot of it going on...
 ---

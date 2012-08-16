@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Just knowing how to program is helpful
 description: In the future, will everyone need to program? Similar to everyone being able to read and write now. It's possible it'll be an essential skill in future life.
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: If you seek tranquillity, do less
 description: I ruminate on what is and isn't necessary
 ---

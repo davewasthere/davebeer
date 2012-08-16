@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Happiness and hedonic adaptation
 description: Why is it that celebrities seem so unhappy, yet we think they should be exstatic living such a priviledged life.
 ---

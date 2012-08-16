@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Went fishing, didn't catch a thing
 description: But perhaps that's not the point? I definitely had a lot of fun
 ---

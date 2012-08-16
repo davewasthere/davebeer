@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Danbro, Crunch and Freeagent: Switching Accountants"
 description: I try and find an accounting solution that takes care of most of the cruft I need to deal with, but isn't stupidly expensive.
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: I've got a new training target
 description: It's always good to have something to aim for...
 ---

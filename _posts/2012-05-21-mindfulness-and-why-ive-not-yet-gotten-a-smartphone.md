@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Mindfulness and why I've not yet gotten a smartphone
 description: Sure, 'stuff' is nice. But do we really need it?
 ---

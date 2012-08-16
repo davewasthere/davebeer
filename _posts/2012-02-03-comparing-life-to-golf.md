@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Comparing life to golf
 description: Bit of a Zen/Buddhist live in the moment contemplation
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Forty is fast approaching
 description: I lament about getting older. That said, there isn't much I can do about it...
 ---

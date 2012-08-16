@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Hosting your blog with GitHub pages
 description: Having found wordpress both great, but also a little slow/annoying/clumsy to extend, I decided to go back to static pages with a twist. You know it makes sense...
 ---

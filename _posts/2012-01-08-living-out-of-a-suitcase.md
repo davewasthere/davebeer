@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Living out of a suitcase
 description: Sure, I like all my 'stuff'. But after a bit of travelling, I find I'm just as happy with very little. So why not get rid of all the extra crap?
 ---

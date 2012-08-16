@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Fear of the blank page
 description: What stops us from engaging in creative endeavours? I wonder why I stopped drawing.
 ---

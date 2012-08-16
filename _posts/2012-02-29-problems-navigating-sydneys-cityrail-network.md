@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Problems navigating Sydney's CityRail network
 description: Don't get me wrong, I like CityRail. Only I found it less than ideal to find my way around. Definitely room for improvement
 ---

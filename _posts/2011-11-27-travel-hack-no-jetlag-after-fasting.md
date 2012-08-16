@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Travel Hack: No jet-lag after fasting"
 description: A technique to reset your body clock while travelling long haul
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Oh my god, it's everywhere!
 description: There is something that is invading. I've only really noticed how prevalent it is!
 ---

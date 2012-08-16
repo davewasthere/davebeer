@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Getting upgraded when you fly
 description: I very rarely buy business class tickets, but there are some tricks to get upgraded fairly regularly.
 ---

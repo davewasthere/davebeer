@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Road rage and avoiding the daily commute
 description: I'm so lucky I've avoided commuting all these years. I don't think I could handle it
 ---

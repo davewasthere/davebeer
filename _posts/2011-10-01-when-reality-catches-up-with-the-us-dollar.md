@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  When reality catches up with the US Dollar
 description: I really know next to nothing about finance (the more I read the more I realise how little I know). But I do wonder whether we'll claw our way out of this financial crisis
 ---

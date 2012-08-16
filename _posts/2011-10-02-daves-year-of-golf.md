@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Dave's year of golf
 description: Born over a few beers, I wonder about taking a year off to play golf. Sounds like fun!
 ---

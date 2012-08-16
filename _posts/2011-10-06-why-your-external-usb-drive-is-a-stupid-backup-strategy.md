@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Why your external USB drive is a stupid backup strategy
 description: Unless your data is in at least two places, then it's not actually backed up. Oh, and hard drives fail. A lot!
 ---
