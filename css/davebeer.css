@@ -78,11 +78,9 @@ header {float: left;}
 
 #sidebar {min-height: 120px; font-size: smaller;}
 #sidebar img {float: left; margin-right: 1em;}
-#sidebar h2 {margin: 0;}
-#sidebar p {margin: 0;}
 
 h1 {font-size: 1.5em;}
-h1, h2, h3{font-family: Georgia, Serif;margin: 0.5em 0;}
+h1, h2, h3{font-family: Georgia, Serif;}
 h2 {font-size: 1.3em; }
 h2 a {text-decoration: none; color: #666;}
 h2 a:hover {color: #669;}
@@ -105,6 +103,124 @@ blockquote:after { font-family:Georgia, Serif; content: "\201E"; font-size: 8em;
 .clearall {clear: both;}
 
 td {border: 1px solid #eee; padding: 0.5em;}
+
+ul.navlinks
+{
+    list-style-type: none;
+    padding: 0;
+}
+ul.navlinks li
+{
+}
+
+.twitter 
+{
+    display: inline-block;
+	background: url('/img/social.png') no-repeat 0 0;
+	width: 32px;
+	height: 0px;
+	padding-top: 32px;
+	overflow:hidden;
+}
+
+.rss {
+    display: inline-block;
+	background: url('/img/social.png') no-repeat -35px 0;
+	width: 32px;
+	height: 0px;
+	padding-top: 32px;
+	overflow:hidden;
+}
+
+.lastfm {
+    display: inline-block;
+	background: url('/img/social.png') no-repeat -70px 0;
+	width: 32px;
+	height: 0px;
+	padding-top: 32px;
+	overflow:hidden;
+}
+
+.youtube {
+    display: inline-block;
+	background: url('/img/social.png') no-repeat -105px 0;
+	width: 32px;
+	height: 0px;
+	padding-top: 32px;
+	overflow:hidden;
+}
+
+.linkedin {
+    display: inline-block;
+	background: url('/img/social.png') no-repeat 0 -36px;
+	width: 32px;
+	height: 0px;
+	padding-top: 32px;
+	overflow:hidden;
+}
+
+.reddit {
+    display: inline-block;
+	background: url('/img/social.png') no-repeat -35px -36px;
+	width: 32px;
+	height: 0px;
+	padding-top: 32px;
+	overflow:hidden;
+}
+
+.skype {
+    display: inline-block;
+	background: url('/img/social.png') no-repeat -70px -36px;
+	width: 32px;
+	height: 0px;
+	padding-top: 32px;
+	overflow:hidden;
+}
+
+.picasa {
+    display: inline-block;
+	background: url('/img/social.png') no-repeat -105px -36px;
+	width: 32px;
+	height: 0px;
+	padding-top: 32px;
+	overflow:hidden;
+}
+
+.deviantart {
+    display: inline-block;
+	background: url('/img/social.png') no-repeat 0 -71px;
+	width: 32px;
+	height: 0px;
+	padding-top: 32px;
+	overflow:hidden;
+}
+
+.facebook {
+    display: inline-block;
+	background: url('/img/social.png') no-repeat -35px -71px;
+	width: 32px;
+	height: 0px;
+	padding-top: 32px;
+	overflow:hidden;
+}
+
+.flickr {
+    display: inline-block;
+	background: url('/img/social.png') no-repeat -70px -71px;
+	width: 32px;
+	height: 0px;
+	padding-top: 32px;
+	overflow:hidden;
+}
+
+.googleplus {
+    display: inline-block;
+	background: url('/img/social.png') no-repeat -105px -71px;
+	width: 32px;
+	height: 0px;
+	padding-top: 32px;
+	overflow:hidden;
+}
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
