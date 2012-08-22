@@ -7,7 +7,7 @@ published: true
 
 I keep flirting with switching to a completely Linux OS for my computing needs, but can never quite make the switch.
 
-15 years ago, SCO System V & HP UX were my first introduction into the Unix world. After which I played around with Slackware Linux to help solve a problem we had in Defence to enable to X.25 legacy hardware run over TCP/IP.
+15 years ago, SCO System V & HP UX were my first introduction into the Unix world. After which I played around with Slackware Linux to help solve a problem we had in Defence to enable some X.25 legacy hardware to run over TCP/IP.
 
 That started me on my Linux journey, but at the same time I started developing web applications using the Microsoft stack using Classic ASP (version 1) on IIS 3.0.
 
