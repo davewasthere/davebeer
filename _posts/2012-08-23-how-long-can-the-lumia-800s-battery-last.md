@@ -2,7 +2,7 @@
 layout: default
 title: How long can the Lumia 800's battery last?
 description: Sick of charging my smart phone daily, I test to see how long the Lumia will last compared to my very old Sony Ericsson w810i
-published: false
+published: true
 ---
 
 On Monday the 20th of August at midday, I took both my phones off charge and decided to do a longevity test. This isn't a real world test, in as much as I barely use either phone. I just wanted to see how long they could possibly last without charging, but minimal usage.
