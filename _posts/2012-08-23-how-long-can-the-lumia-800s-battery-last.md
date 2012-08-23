@@ -11,7 +11,7 @@ What's the point? Well, I often travel and it's nice to know how many days I get
 
 ![Battery longevity test between a Sony Ericsson w810i and a Nokia Lumia 800 - three days in](http://davebeer.com/img/w810i-vs-lumia800-battery-test.jpg)
 
-It's now three days into the test and both phones are still running. I've made a call and sent and received texts on the w810i and it's battery looks to have around %60 charge remains. The Lumia on the other hand only has about %30 remaining. It doesn't have a SIM-card in it, and is purely using WIFI. But it does regularly download emails, but I can't say I've used it much more than to check how the battery drain is progressing.
+It's now three days into the test and both phones are still running. I've made a call and sent and received texts on the w810i and it's battery looks to have around 60% charge remains. The Lumia on the other hand only has about 30% remaining. It doesn't have a SIM-card in it, and is purely using WIFI. But it does regularly download emails, but I can't say I've used it much more than to check how the battery drain is progressing.
 
 When I travel, I normally get over a week out of my w810i, depending on how much I'm using it. But the Nokia, being my first smartphone, needed regular charging. Admittedly I was using it a lot more heavily. The camera is awesome and Photosynth lets you take incredible panoramas. And the off-line GPS navigation was a big plus while riding around Europe.
 
