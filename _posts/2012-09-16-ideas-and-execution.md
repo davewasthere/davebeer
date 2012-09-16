@@ -2,7 +2,7 @@
 layout: default
 title: Ideas and execution
 description: Rather than looking for an idea that's not been done before, try finding something that already exists, but has been executed poorly.
-published: false
+published: true
 ---
 
 I get approached by a lot of 'idea people' wanting a technical partner to help execute their idea. I'm open to the concept, but always keep in mind the adage 'Ideas are cheap, execution is everything'. Although I recently read <a href="http://sivers.org/multiply" rel="nofollow">an article by Derek Sivers</a> which probably put it into better perspective.
