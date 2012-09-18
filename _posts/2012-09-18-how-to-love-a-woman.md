@@ -2,7 +2,7 @@
 layout: default
 title: How to love a woman
 description: A quote from Bob Marley about how to love a woman
-published: false
+published: true
 ---
 
 I don't think I really need to add much. Bob Marley said it all:
