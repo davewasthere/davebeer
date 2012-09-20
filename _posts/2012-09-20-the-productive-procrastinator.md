@@ -2,7 +2,7 @@
 layout: default
 title: The productive procrastinator
 description: How I (a long time procrastinator) broke into productivity.
-published: false
+published: true
 ---
 
 A bit of background. I have a to-do list of a ton of odd jobs about the place that I seem to manage to put off. Probably forever if I extrapolate it out far enough.
