@@ -2,7 +2,7 @@
 layout: default
 title: The productive procrastinator
 description: How I (a long time procrastinator) broke into productivity.
-published: false
+published: true
 ---
 
 A bit of background. I have a to-do list of a ton of odd jobs about the place that I seem to manage to put off. Probably forever if I extrapolate it out far enough.
@@ -23,3 +23,4 @@ Yesterday, for example:
 * Wired up two new sockets downstairs. I've had bare wires (terminated) since we redecorated back middle of last year.
 * Set up my old laptop (the one with a broken screen) with Ubuntu to run as a low-powered server. Now that I'm working on a new project, I've noticed running my current server 24/7 has a big impact on my electricity usage.
 
+It's hard to explain what's changed or where the motivation has come from. But I'm enjoying this new-found productive phase. I definitely needed it! By sorting out a few little niggles each day, life just seems more pleasant.
