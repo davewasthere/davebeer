@@ -13,6 +13,6 @@ They sat fairly low around the ankle and initially felt like they were going to 
 
 But after a very short run-in period, they became my absolute favourite shoe of all time. Molded to my feet, were dressy enough for me (I do smart casual at best!) and I thought they looked good.
 
-A few years later though, and my pair were looking rather tatty. Ended up finding a few pairs in a clearance sale in the States, but the shop only delivered State-side. So I got a mate in New York (https://twitter.com/johnleesandiego) to forward them on for me.
+A few years later though, and my pair were looking rather tatty. Ended up finding a few pairs in a clearance sale in the States, but the shop only delivered State-side. So I got a mate in New York to forward them on for me.
 
 Ten years on, and I'm probably half-way through my third pair, with just one pair remaining. It's got me wondering, what will I be wearing when I'm 50?
