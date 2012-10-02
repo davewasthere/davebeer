@@ -1,6 +1,6 @@
 ---
 layout: default
-title: When people steal your images
+title: When people 'borrow' your images
 description: A lot of my photos get 'borrowed' by other websites without attrition. Makes me wonder what the best course of action would be.
 published: true
 ---
