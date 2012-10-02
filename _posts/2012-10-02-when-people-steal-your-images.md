@@ -2,7 +2,7 @@
 layout: default
 title: When people steal your images
 description: A lot of my photos get 'borrowed' by other websites without attrition. Makes me wonder what the best course of action would be.
-published: false
+published: true
 ---
 
 What do you do when people use your images without permission?
