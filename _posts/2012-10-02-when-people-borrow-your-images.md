@@ -25,11 +25,6 @@ On my site, I've taken pretty much every photo myself. But there's a few that I 
 
 <img src="http://www.davewasthere.com/travel/images011/wtc1.jpg" alt="The world trade center under attack" />
 
-But I can't seem to find the source for the image. The best quality image is on a greek news site. But are they the source? If I can't attibute it or get permission, should I take it down?
+But I can't seem to find the source for the image. The best quality image is on a greek news site. But are they the source? If I can't attribute it or get permission, should I take it down?
 
 Hard to know what the best course of action is...
-
-
-
-
-
