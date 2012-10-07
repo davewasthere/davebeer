@@ -2,7 +2,7 @@
 layout: default
 title: Seth Godin is wrong (or at least is guilt of using bad examples)
 description: Seth argues that mp3 files don't sound nearly as good as they could, or that CDs are sub-par. I disagree.
-published: false
+published: true
 ---
 
 I devour Seth Godin's work. His bite-sized snippets of wisdom make great reading, so I was rather surprised to find myself utterly disagreeing with him on his latest post about <a href="http://sethgodin.typepad.com/seths_blog/2012/10/the-curse-of-incremental-improvement.html" rel="nofollow">the curse of incremental improvement</a>.
