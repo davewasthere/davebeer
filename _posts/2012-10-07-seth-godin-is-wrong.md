@@ -29,4 +29,4 @@ So looks like Seth was wrong in pretty much all his examples (As for the cellpho
 
 Perfect is the enemy of good-enough in my book. You've got to take into account the law of diminishing returns. Release it if it's good enough, learn from it and improve. 
 
-Don't be frozen by the futile pursuit of perfection.
+Don't be frozen by the futile pursuit of perfection. Otherwise you risk never releasing at all.
