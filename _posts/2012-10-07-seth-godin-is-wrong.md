@@ -25,7 +25,7 @@ Bitrate is only one part of the audio quality equation however. The other is bit
 
 It makes sense to record and process in 24-bit purely for the extra headroom. But for playback? Completely pointless. We're the limiting factor and unless we evolve better ears, we always will be.
 
-So looks like Seth was wrong in pretty much all his examples (I'm guessing he's got an iPhone, which admittedly isn't brilliant for calls, whereas my SE810i is great). But what is he actually trying to say?
+So looks like Seth was wrong in pretty much all his examples (As for the cellphone call quality example, I'm guessing he's got an iPhone, which admittedly isn't brilliant for calls, whereas my SE810i is great). But what is he actually trying to say?
 
 Perfect is the enemy of good-enough in my book. You've got to take into account the law of diminishing returns. Release it if it's good enough, learn from it and improve. 
 
