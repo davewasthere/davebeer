@@ -15,7 +15,7 @@ Back in early 2008, I was asked advice about doing an internal re-write of this 
 
 The existing site had about 300k users on it, who all needed to be migrated to the new platform. We were also restricted on technology and had to use a particular platform, which was a headache in itself. But on the 13th of July 2009, after finishing development and running the migrator, our first user signed up on the new site.
 
-It was so exciting seeing the increasing number of sign-ups. Online users were orders of magnitude higher than the old site could support. For a while, we ran both sites concurrently. Old users were redirected to the old site after login, while new users go to play with the new site (several users registered twice, not wanting to wait). But once the client had confidence in the new release, we retired the old site and continued to watch the numbers grow.
+It was so exciting seeing the increasing number of sign-ups. Online users were orders of magnitude higher than the old site could support. For a while, we ran both sites concurrently. Old users were redirected to the old site after login, while new users got to play with the new site (several users registered twice, not wanting to wait). But once the client had confidence in the new release, we retired the old site and continued to watch the numbers grow.
 
 <img src="http://i.imgur.com/2aUFP.png" alt="chart showing registrations">
 
