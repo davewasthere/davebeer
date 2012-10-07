@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Seth Godin is wrong (or at least is guilt of using bad examples)
+title: Seth Godin is wrong
 description: Seth argues that mp3 files don't sound nearly as good as they could, or that CDs are sub-par. I disagree.
 published: true
 ---
