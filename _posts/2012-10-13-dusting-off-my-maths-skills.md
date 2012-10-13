@@ -9,7 +9,7 @@ There's so much information around today. You can learn absolutely anything you 
 
 Today, for instance, I've been reading up on Anerobic digesters. It's a pet project of mine that I'm hoping to build one later in the year. (Client projects take priority, but I like to leave room for some fun personal projects as well. Especially when they're not IT-related!)
 
-But all that reading is me procrastinating from finishing the first problem set for my <a href="http://class.stanford.edu/solar/Fall2012" rel="nofollow">Solar Cells, Fuel Cells & Batteries</a> course that I'm doing through Stanford University.
+But all that reading is me procrastinating from finishing the first problem set for my <a href="http://class.stanford.edu/solar/Fall2012" rel="nofollow">Solar Cells, Fuel Cells &amp; Batteries</a> course that I'm doing through Stanford University.
 
 It might be my rusty maths skills that are to blame here. I'm having to use skills I've not touched for a decade or more.
 
