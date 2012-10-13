@@ -2,7 +2,7 @@
 layout: default
 title: Dusting off my maths skills
 description: I'm taking Stanford's Solar Cells, Fuel Cells, & Batteries course and the maths is forcing me to use parts of my brain I've let atrophy
-published: false
+published: true
 ---
 
 There's so much information around today. You can learn absolutely anything you want.
