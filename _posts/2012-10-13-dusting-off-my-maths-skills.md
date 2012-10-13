@@ -9,11 +9,11 @@ There's so much information around today. You can learn absolutely anything you 
 
 Today, for instance, I've been reading up on Anerobic digesters. It's a pet project of mine that I'm hoping to build one later in the year. (Client projects take priority, but I like to leave room for some fun personal projects as well. Especially when they're not IT-related!)
 
-But all that reading is me procrastinating from finishing the first problem set for my <a href="http://class.stanford.edu/solar/Fall2012" rel="nofollow">Solar Cells, Fuel Cells &amp; Batteries</a> course that I'm doing through Stanford University.
+But all of my reading today, is actually just me procrastinating from finishing the first problem set for my <a href="http://class.stanford.edu/solar/Fall2012" rel="nofollow">Solar Cells, Fuel Cells &amp; Batteries</a> course that I'm doing through Stanford University.
 
-It might be my rusty maths skills that are to blame here. I'm having to use skills I've not touched for a decade or more.
+It might be my rusty maths skills that are to blame. I'm having to use skills I've not touched for a decade or more. (Even this blog post is a procrastination of sorts)
 
-It's funny. You'd think programming is quite a mathmatical thing to do, but that's not what I've found. I've mostly implemented business logic in my projects and any maths involved is normally pretty fundamental stuff that you could do in your head.
+It's funny. You'd think programming is quite a mathematical thing to do, but that's not what I've found. I've mostly implemented business logic in my past projects and any maths involved is normally pretty fundamental stuff that you could do in your head.
 
 Admittedly I needed to study a fair bit of maths to get my NZCE (New Zealand Certificate in Engineering). But now I'm having to remember how to factorise (You remember: "solve for x?") and in a way, it's feeling like I'm learning it for the first time.
 
