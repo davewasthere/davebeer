@@ -9,6 +9,10 @@ I used to sail a fair bit when I was a child living up north. Just little P-clas
 
 Lately, though, I've started thinking more and more about taking it up again. It's a little hard to sail in Cheltenham, being so far away from water, but I'm looking at returning to Auckland soon and if there's something Auckland has a lot of, it's boats.
 
+<img src="http://i.imgur.com/hmCrw.jpg" alt="sailing in Dubai">
+
+*The last time I think I went sailing - back in 1999 in Dubai*
+
 For now, I'm just voraciously reading as much as I can get my hands on. Accounts of sailing, like Paul Lutus's <a rel="nofollow" href="http://arachnoid.com/sailbook/index.html">Confessions of a Long Distance Sailor</a>, RYA manuals and I've ordered Seidman's "The Complete Sailor".
 
 Once back in NZ, I'm hoping to get some experience crewing if possible. Maybe just hanging around a marina, offering to lend a hand at anything. See what happens.
