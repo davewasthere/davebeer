@@ -2,7 +2,7 @@
 layout: default
 title: The end is in sight
 description: I muse about the Pareto principle. The 80/20 rule.
-published: false
+published: true
 ---
 
 Something you think the end is in sight. It's so close it's almost tangible. But that's when you're likely to get caught out.
