@@ -2,7 +2,7 @@
 layout: default
 title: Always plan when smuggling weapons
 description: My 'everything last minute' method of planning causes a few issues when I try and take my air rifle back home with me.
-published: false
+published: true
 ---
 
 I'm not really big on over-planning, or even much planning at all. Even a three month trip doesn't really take a lot of organising. As long as I've got my passport and some money, then I've got the essentials covered at least.
