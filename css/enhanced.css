@@ -38,3 +38,14 @@ footer
 {
 	max-width: 588px; 
 }
+
+
+.rss, .facebook, .twitter, .youtube, .linkedin, .googleplus
+{
+	opacity: 0.5;  
+}
+
+.rss:hover, .facebook:hover, .twitter:hover, .youtube:hover, .linkedin:hover, .googleplus:hover
+{
+	opacity: 1;  
+}
