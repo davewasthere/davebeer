@@ -223,6 +223,16 @@ ul.navlinks li
 	overflow:hidden;
 }
 
+.rss, .facebook, .twitter, .youtube, .linkedin, .googleplus
+{
+	opacity: 0.8;  
+}
+
+.rss:hover, .facebook:hover, .twitter:hover, .youtube:hover, .linkedin:hover, .googleplus:hover
+{
+	opacity: 1;  
+}
+
 #twitter_update_list
 {
     list-style-type: none;
