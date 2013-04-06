@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Mining Bitcoins for fun and profit
+title: Mining Bitcoin for fun and profit
 description: A quick primer into how to mine bitcoins and whether or not it's profitable to do so.
 published: true
 ---
