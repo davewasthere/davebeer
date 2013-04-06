@@ -24,5 +24,6 @@ My reward for the effort involved is 0.00053039 BTC. I'm contributing about one 
 More difficult is working out how much extra electricity I'm using. Total power usage of my desktop is about 400W. My GPU running flat out draws around 250W of that. At idle, it only draws about 150W. So at a guess, I've expended an extra 0.2kWh to earn that 7.4 cents. Seeing as I pay about 15p/kWh, that makes it 4.6 cents for the extra power usage. So yeah, it's profitable, as long as you're not running your computer just to generate Bitcoins. Because in two hours, I've probably spent about 18.4 cents on electricity (not counting the juice needed to run my monitors).
 
 With Slush's pool, the minimum reward amount is 0.05 BTC (about $7 USD). So to obtain that, you'd need to keep it running at least 200 hours if your GPU was a similar spec to mine. (An ATI Radeon HD4850)
+Once you reach the threshold, you'll get a payout and you can then use that freshing minted Bitcoin for 'something'.
 
-So there you go. A very basic analysis of the rewards of mining Bitcoin. Good luck! Now I've just got to figure out what to do with my newfound wealth!
+So there you go. A very basic analysis of the economic rewards of mining Bitcoin. Good luck! Now I've just got to figure out what to do with my newfound wealth!
