@@ -1,6 +1,8 @@
 ---
 layout: default
-published: false
+title: Mining Bitcoins for fun and profit
+description: A quick primer into how to mine bitcoins and whether or not it's profitable to do so.
+published: true
 ---
 
 Chances are you've probably heard of <a href="http://bitcoin.org/" rel="nofollow">Bitcoin</a>, a digital currency. Well, I've decided to give Bitcoin mining a go to see if it's profitable.
