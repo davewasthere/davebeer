@@ -11,7 +11,7 @@ The original site is creaking at the seams, so I'm writing a new bespoke system 
 
 Now looking at the data from the original database, I can see an account that I know the password of, and I can see a 34 character value starting with $P$B...  which all of the passwords begin with.
 
-A quick google shows that wordpress uses a framework called <a href="http://www.openwall.com/phpass/" rel="nofollow">phpass</a>. Another little google finds a <a href="https://www.phpbb.com/community/viewtopic.php?f=71&t=1771165" rel="nofollow">port of phpass written in c#</a> by <a href="http://www.digilitepc.net/" rel="nofollow">Ryan Irecki</a> (a fellow Kiwi?).
+A quick google shows that wordpress uses a framework called <a href="http://www.openwall.com/phpass/" rel="nofollow">phpass</a>. Another little google finds a <a href="https://www.phpbb.com/community/viewtopic.php?f=71&amp;t=1771165" rel="nofollow">port of phpass written in c#</a> by <a href="http://www.digilitepc.net/" rel="nofollow">Ryan Irecki</a> (a fellow Kiwi?).
 
 I was hoping the passwords would all be BCrypted, but a little bit of experimentation showed that they are indeed just MD5-based salted and variable iteration hashes. The only modification Ryan's code needed was to switch out the $H$ header for $P$ and voila! Portable password checking on .Net.
 
