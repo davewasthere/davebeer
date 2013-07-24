@@ -1,7 +1,7 @@
 ---
 layout: default
 title: A new booking system for donating blood
-description: "I'd like to build blood.co.uk a new booking system. Their current one adds too much friction to the process"
+description: "I'd like to build blood.co.uk a new booking system. Their current one adds too much friction the process"
 published: true
 ---
 
