@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default
-title: Just a little more details would be nice
+title: Just a little more detail would be nice
 description: "If you're running windows with Ruby/Jekyll, you're a second class citizen"
 ---
 
