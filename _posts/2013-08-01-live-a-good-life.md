@@ -2,6 +2,7 @@
 published: true
 title: Live a good life
 description: One of my favourite quotes from Marcus Aurelius
+layout: default
 ---
 
 My favourite quotation from Meditations by Marcus Aurelius:
