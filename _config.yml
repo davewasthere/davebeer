@@ -1,5 +1,5 @@
 permalink:  /posts/:title
 auto:       true
 prose:
-  rooturl: '_posts'
+  rooturl: ''
   siteurl: 'http://davebeer.com/'
