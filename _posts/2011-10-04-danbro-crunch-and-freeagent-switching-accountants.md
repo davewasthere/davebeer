@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "Danbro, Crunch and Freeagent: Switching Accountants"
-description: I try and find an accounting solution that takes care of most of the cruft I need to deal with, but isn't stupidly expensive.
+description: "I try and find an accounting solution that takes care of most of the cruft I need to deal with, but isn't stupidly expensive."
+published: true
 ---
 
 I've been trying to improve my accounting situation. When I started my company back in 2008, I originally went with Danbro accounting. They seemed pretty good, but I did find them quite expensive for the service I was getting. That said, I just needed someone quick when I first started. And every hour I spent fussing over accounts was a huge opportunity cost.
@@ -19,3 +20,7 @@ First thing is how quick it was. So nice to have such a responsive site after Cr
 What I'm not clear on, is how expensive year-end accounts will be. At £25/month for a limited company, FreeAgent + an Accountant for year end will work out more expensive than Crunch. But visibility into your finances is so much better. (Well, it's better than I had with Danbro. I've not really been able to evaluate Crunch yet due to their system)
 
 I think I'm likely to bin Crunch and find a FreeAgent-friendly accountant to do my year-end for me. Will give that a go and see how it works for me.
+
+**Update 03 September 2013**
+
+I actually didn't find much benefit from using FreeAgent in the end. I've written a little package for myself that is simple and exactly what I need, saving myself a cool £30/month. Which helps pay for my accountant at the end of the year when he produces my yearly accounts from the information my system spits out. It's easy, fast and free. That said, the FreeAgent interface was very nicely done and Crunch's web interface seemed to be evolving quickly too. But my books are so simple, I found it hard to justify the expense of either...
