@@ -1,2 +1,5 @@
 permalink:  /posts/:title
 auto:       true
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://davebeer.com/'
