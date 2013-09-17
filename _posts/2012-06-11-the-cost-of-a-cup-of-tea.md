@@ -24,3 +24,5 @@ Without boring you with the methodology, here are the results:
 </table>
 
 So, boiling the water on the hob took a little more energy, but it's a lot cheaper per kWh so ends up being the best option overall. And since I drink around 10 cups a day (well, a couple of coffees and a lot of Roibos), then it looks like I can buy a nice stove-top whistling kettle which will pay for itself in a year. Either that, or get cracking on my solar-powered samovar and get my hot water for free.
+
+**Update - 17 Sept 2013** 
