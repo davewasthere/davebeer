@@ -2,7 +2,9 @@
 layout: default
 title: The cost of a cup of tea
 description: What I do in my spare time... work out the cost of a cup of tea and the difference between using electricity or gas to make it.
+published: true
 ---
+
 This is the sort of thing that occupies my brain some days...
 
 My jug broke just before I headed off on my winter migration, so I've been using a pot to boil water for my tea ever since. But ended up getting another electric kettle as an impulse buy, but it's got me wondering, which one costs more.
@@ -16,10 +18,9 @@ Without boring you with the methodology, here are the results:
 <table>
 	<thead><tr><th>Method</th><th>kWh</th><th>Cost</th></tr></thead>
 	<tbody>
-		<tr><td>Electric Kettle</td><td>0.1</td><td>0.59p</td></tr>
-		<tr><td>Pot on gas hob</td><td>0.167</td><td>1.45p</td></tr>
+		<tr><td>Electric Kettle</td><td>0.1</td><td>1.52p</td></tr>
+		<tr><td>Pot on gas hob</td><td>0.167</td><td>0.62p</td></tr>
 	</tbody>
 </table>
 
 So, boiling the water on the hob took a little more energy, but it's a lot cheaper per kWh so ends up being the best option overall. And since I drink around 10 cups a day (well, a couple of coffees and a lot of Roibos), then it looks like I can buy a nice stove-top whistling kettle which will pay for itself in a year. Either that, or get cracking on my solar-powered samovar and get my hot water for free.
-		
