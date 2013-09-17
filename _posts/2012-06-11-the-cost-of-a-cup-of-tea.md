@@ -25,4 +25,4 @@ Without boring you with the methodology, here are the results:
 
 So, boiling the water on the hob took a little more energy, but it's a lot cheaper per kWh so ends up being the best option overall. And since I drink around 10 cups a day (well, a couple of coffees and a lot of Roibos), then it looks like I can buy a nice stove-top whistling kettle which will pay for itself in a year. Either that, or get cracking on my solar-powered samovar and get my hot water for free.
 
-**Update - 17 Sept 2013** 
+**Update - 17 Sept 2013** Oops! I had to edit my numbers as I'd transposed them. Took me this long to notice. But yeah, boiling a cuppa on a gas hob is a lot cheaper. Approx 40% of the cost of electricity. So go old-school!
