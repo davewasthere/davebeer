@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Wearing the same shoes
-description: I've been wearing the same shoes (well, several pairs of the same model) for ten years...
+description: "I've been wearing the same shoes (well, several pairs of the same model) for ten years..."
 published: true
 ---
 
-Back in 2002 I was on holiday in New York. I'd packed fairly light, as is usual, but needed some shoes for going out. I ended up picking up a pair of Steve Madden Roloo's, which initially, I wasn't overly fussed about.
+Back in 2002 I was on holiday in Las Vegas. I'd packed fairly light, as is usual, but needed some shoes for going out. I ended up picking up a pair of Steve Madden Roloo's, which initially, I wasn't overly fussed about.
 
 They sat fairly low around the ankle and initially felt like they were going to slip off. Completely unfair to compare them to trainers, but that's all I had with me.
 
