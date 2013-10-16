@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 Considering how long I avoided getting a smartphone, I find I'm really missing my Nexus 4 now.
@@ -18,5 +18,4 @@ Mostly it's how seemless Google seemed to present information. Like public trans
 
 It's only one example, but it just feels constantly like that. Google/Android works the way I think it should.. but the Windows offering isn't completely hopeless. It's just that it isn't really in the same league.
 
-That said, I'm actually finding some pleasure in the limitations. I've turned off most notifications and am relishing a device that is simpler and less intrusive. Less intrusive purely because I'm using it less. Although I'm hoping to use the camera more. It's honestly pretty decent for a phone camera. 
-
+That said, I'm actually finding some pleasure in the limitations. I've turned off most notifications and am relishing a device that is simpler and less intrusive. Less intrusive purely because I'm using it less. Although I'm hoping to use the camera more. It's honestly pretty decent for a phone camera.
