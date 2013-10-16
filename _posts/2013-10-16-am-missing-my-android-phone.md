@@ -1,4 +1,7 @@
 ---
+layout: default
+title: Am missing my Android phone
+decription: Forced to switch to my backup phone, I mused about the differences between Android and Windows
 published: true
 ---
 
