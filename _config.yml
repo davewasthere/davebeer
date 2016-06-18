@@ -1,6 +1,5 @@
 markdown: kramdown
 permalink:  /posts/:title
-auto:       true
 prose:
   rooturl: ''
   siteurl: 'http://davebeer.com/'
