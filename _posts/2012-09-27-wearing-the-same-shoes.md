@@ -9,7 +9,7 @@ Back in 2002 I was on holiday in Las Vegas. I'd packed fairly light, as is usual
 
 They sat fairly low around the ankle and initially felt like they were going to slip off. Completely unfair to compare them to trainers, but that's all I had with me.
 
-<img src="http://i.imgur.com/0urkr.jpg" alt="Steve Madden Roloo shoes" />
+<img src="https://i.imgur.com/0urkr.jpg" alt="Steve Madden Roloo shoes" />
 
 But after a very short run-in period, they became my absolute favourite shoe of all time. Molded to my feet, were dressy enough for me (I do smart casual at best!) and I thought they looked good.
 

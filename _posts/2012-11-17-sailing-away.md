@@ -9,7 +9,7 @@ I used to sail a fair bit when I was a child living up north. Just little P-clas
 
 Lately, though, I've started thinking more and more about taking it up again. It's a little hard to sail in Cheltenham, being so far away from water, but I'm looking at returning to Auckland soon and if there's something Auckland has a lot of, it's boats.
 
-<img src="http://i.imgur.com/hmCrw.jpg" alt="sailing in Dubai">
+<img src="https://i.imgur.com/hmCrw.jpg" alt="sailing in Dubai">
 
 *The last time I think I went sailing - back in 1999 in Dubai*
 

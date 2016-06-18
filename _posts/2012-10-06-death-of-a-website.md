@@ -17,7 +17,7 @@ The existing site had about 300k users on it, who all needed to be migrated to t
 
 It was so exciting seeing the increasing number of sign-ups. Online users were orders of magnitude higher than the old site could support. For a while, we ran both sites concurrently. Old users were redirected to the old site after login, while new users got to play with the new site (several users registered twice, not wanting to wait). But once the client had confidence in the new release, we retired the old site and continued to watch the numbers grow.
 
-<img src="http://i.imgur.com/2aUFP.png" alt="chart showing registrations">
+<img src="https://i.imgur.com/2aUFP.png" alt="chart showing registrations">
 
 The past couple of days, I've downloaded the signup date for each user to produce this graph (horrible clunky API unfortunately - but there's only 3 people online, so no impact on any users). Then grouped by day and averaged over seven days to remove some of the massive spikes, created the above chart. It shows clearly when we switched it on in 2009 (earlier registrations were based on the old system users) as well as the cyclical/seasonal user-signups which were related to school years and occasional promotions.
 

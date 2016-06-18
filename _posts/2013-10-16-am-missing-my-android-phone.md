@@ -9,7 +9,7 @@ Considering how long I avoided getting a smartphone, I find I'm really missing m
 
 But, the other day, my poor little Nexus took a tumble (about 1 foot onto a laminate wooden floor) and when I picked it up, was shocked to see the screen had shattered.
 
-![Rather more fragile screen that I'd have hoped..](http://i.imgur.com/WI9rudu.jpg)
+![Rather more fragile screen that I'd have hoped..](https://i.imgur.com/WI9rudu.jpg)
 
 It must've been a pretty unlucky drop to cause that! Or possibly some sort of flaw in the glass. Bit gutting though, as the digitiser won't work, so it's not possible to even unlock the phone. Fortunately there's very little on the phone that isn't available elsewhere online... But it's still a pain.
 

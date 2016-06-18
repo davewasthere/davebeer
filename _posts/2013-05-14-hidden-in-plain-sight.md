@@ -12,7 +12,7 @@ I like the idea of things hidden in plain sight. I'd love to build little sleepi
 
 Geocaching is sort of similar. It's surprising how many caches there are in the immediate vicinity. I was surprised to find one literally outside my flat.
 
-![A nano geocache](http://i.imgur.com/IfTfX38.jpg)
+![A nano geocache](https://i.imgur.com/IfTfX38.jpg)
 
 I like these sort of subversive little hobbies. Like <a href="http://www.bookcrossing.com">bookcrossing</a> as well, where you release books into the wild in various spots around town. There's all sorts of things going on locally that most people don't notice.
 
