@@ -13,7 +13,7 @@ Back in 1999 I took this photo in Dubai's Gold Souk which I then used for my blo
 
 In those days, the pipes to the interweb weren't as fat as they are now. So the image was processed, cropped and over-optimised to produce the following: 
 
-<img src="http://www.davewasthere.com/travel/images006/bracelets_in_gold_souk.jpg" alt="Dubai gold souk" />
+<img src="https://www.davewasthere.com/travel/images006/bracelets_in_gold_souk.jpg" alt="Dubai gold souk" />
 
 That still didn't stop people (mostly websites out in Dubai) from saving the image off my site, uploading to their own without attributing the original source. Three pages worth of search results, showing sites borrowing that image.
 
@@ -23,7 +23,7 @@ I was a little irritated when I first saw the plagiarism, but in the end, I'm no
 
 On my site, I've taken pretty much every photo myself. But there's a few that I didn't. This world trade center photo is one.
 
-<img src="http://www.davewasthere.com/travel/images011/wtc1.jpg" alt="The world trade center under attack" />
+<img src="https://www.davewasthere.com/travel/images011/wtc1.jpg" alt="The world trade center under attack" />
 
 But I can't seem to find the source for the image. The best quality image is on a greek news site. But are they the source? If I can't attribute it or get permission, should I take it down?
 
