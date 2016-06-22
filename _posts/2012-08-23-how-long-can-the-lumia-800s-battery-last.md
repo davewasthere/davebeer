@@ -9,7 +9,7 @@ On Monday the 20th of August at midday, I took both my phones off charge and dec
 
 What's the point? Well, I often travel and it's nice to know how many days I get out of a device between charges. My Kindle is awesome, allow me a couple of weeks between charges. (I don't have wireless on normally, but I read a lot, which sucks through the battery)
 
-![Battery longevity test between a Sony Ericsson w810i and a Nokia Lumia 800 - three days in](http://davebeer.com/img/w810i-vs-lumia800-battery-test.jpg)
+![Battery longevity test between a Sony Ericsson w810i and a Nokia Lumia 800 - three days in](/img/w810i-vs-lumia800-battery-test.jpg)
 
 It's now three days into the test and both phones are still running. I've made a call and sent and received texts on the w810i and it's battery looks to have around 60% charge remains. The Lumia on the other hand only has about 30% remaining. It doesn't have a SIM-card in it, and is purely using WIFI. But it does regularly download emails, but I can't say I've used it much more than to check how the battery drain is progressing.
 
