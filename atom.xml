@@ -5,10 +5,10 @@ layout: null
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Dave Beer</title>
- <link href="http://davebeer.com/atom.xml" rel="self"/>
- <link href="http://davebeer.com/"/>
+ <link href="https://davebeer.com/atom.xml" rel="self"/>
+ <link href="https://davebeer.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://davebeer.com/</id>
+ <id>https://davebeer.com/</id>
  <author>
    <name>Dave Beer</name>
    <email>davebeer@gmail.com</email>
@@ -17,9 +17,9 @@ layout: null
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://davebeer.com{{ post.url }}"/>
+   <link href="https://davebeer.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://davebeer.com{{ post.id }}</id>
+   <id>https://davebeer.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}

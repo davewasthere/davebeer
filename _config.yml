@@ -2,4 +2,4 @@ markdown: kramdown
 permalink:  /posts/:title
 prose:
   rooturl: ''
-  siteurl: 'http://davebeer.com/'
+  siteurl: 'https://davebeer.com/'
