@@ -14,3 +14,7 @@ I actually have a lot of fun developing for windows. I like Visual Studio 2012 a
 In the end, it took about an hour to sort. Installed Ubuntu 13.04 desktop on a USB stick, add a few packages (ruby, rubydev and jekyll) install git, set up a new ssh key and clone my repository, then try and build it with Jekyll.
 
 Turns out, an old post had an unescaped ampersand character within a a-tag's href field. In the past, that's never been an issue. But looks like there's been a minor breaking change. I modified the offending file and we're back up running again. Joy!
+
+**EDIT - 15 Dec 2016** - It _used_ to be difficult, but it's really pretty trivial now. And Windows no longer feels like a 2nd class citizen.
+
+One of the biggest gotchas I found with Jekyll development (using Visual Studio) was that VS would include BOM at the start of a UTF-8 document by default. Unfortunately, either Jekyll, or Github pages doesn't like Byte Order Marks, so you need to configure VS so it does not automagically include BOM when saving... after I figured that out, I've been finding site development with Jekyll on Windows pretty seamless since... But I definitely lost a lot of hours until sorting out the issue.
