@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Professional Stagnation in Software Development
+published: false
 description: After consulting for 8+ years, it's easy to fall into habits of doing projects a certain way. I found it is time to shake things up a little.
 ---
 
