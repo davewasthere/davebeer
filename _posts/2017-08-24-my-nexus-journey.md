@@ -9,7 +9,7 @@ I'm now on my fourth Nexus phone, the LG-made Nexus 5X. Up until the Google Pixe
 ## Nexus 7
 In Aug 2012, I bought a Nexus 7 tablet. Just the Wifi 16Gb version for £199. And actually, it's still in use today. But it's terribly slow, even after a factory reset.
 
-I'd been reluctant to get any sort of smart phone and I thought a tablet would suit me better at the time.
+I'd been reluctant to get any sort of smart phone and I thought a tablet would suit me better at the time. In theory, if I downgrade it to KitKat 4.4.4, it'll run quicker again.. I barely use it, but one day I might get around to doing the downgrade.
 
 ## Nexus 4
 This was my first Android phone. £279 from the Play store in March 2013. The main reason I purchased this, is my Sony Erricson 810i had finally given up the ghost.
