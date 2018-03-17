@@ -1,7 +1,7 @@
 ---
 layout: default
 title: If you seek tranquillity, do less
-description: I ruminate on what is and isn't necessary
+description: I ruminate on what is and isn't necessary after reading Meditations by Marcus Aurelius
 ---
 I'm reading Meditations by Marcus Aurelius and really enjoying it. But one bit has struck me as particularly thought provoking.
 

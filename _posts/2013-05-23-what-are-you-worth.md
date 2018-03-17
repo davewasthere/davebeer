@@ -2,7 +2,7 @@
 published: true
 layout: default
 title: "What are you worth?"
-description: "Is a paycheck worth giving up autonomy for?"
+description: "Is a paycheck worth giving up autonomy for? Surely it's not the only way to earn a crust. And don't call me Shirley!"
 
 ---
 

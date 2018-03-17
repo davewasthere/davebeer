@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Microsoft say Bing as good as Google? Not yet at least.
-description: Just a quick comparison between search engines.
+description: "Just a quick comparison between search engines. I compare Bing's results with Google's"
 ---
 It looks as though Bing still need to sort out their indexing.
 

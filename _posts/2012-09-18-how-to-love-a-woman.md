@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How to love a woman
-description: A quote from Bob Marley about how to love a woman
+description: A quote from Bob Marley about how to love a woman. Just a quote from Bob Marley.
 published: true
 ---
 

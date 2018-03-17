@@ -1,7 +1,7 @@
 ---
 published: true
 title: Live a good life
-description: One of my favourite quotes from Marcus Aurelius
+description: One of my favourite quotes from Marcus Aurelius book 'Meditations' - his personal writings on Stoic philosophy
 layout: default
 ---
 
