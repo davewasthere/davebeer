@@ -1,5 +1,0 @@
-markdown: kramdown
-permalink:  /posts/:title
-prose:
-  rooturl: ''
-  siteurl: 'https://davebeer.com/'
