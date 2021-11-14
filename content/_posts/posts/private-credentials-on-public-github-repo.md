@@ -9,7 +9,7 @@ I was pretty happy doing my first hackathon. I took part in Bendigo's first [Ran
 
 So our team came up with a pretty reasonable concept of a web-app that Suppliers can list Donations that they have available - and then an email goes out to around 40 vetted agencies, and the first agency that can pick up the Donation can claim it. After which, it's the agencies that distribute the food to the needy families, soup kitchens, etc...
 
-![Our lovely web app](/img/foodshare.png)  
+![Our lovely web app](/images/foodshare.png)  
 **Our lovely winning application**
 
 The web-app was pretty straight-forward. It was when setting up the email notifications where I came a bit unstuck. Initially I tried signing up with Sendgrid. But they (rightly in hindsight) flagged my account as high-risk and wouldn't let me sign up. Although to be fair, they also tweeted afterward saying they want to get me sending emails, so think that they're pretty helpful really.
