@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@netlify/plugin-gatsby": "^1.0.3",
     "gatsby": "^4.1.0",
     "gatsby-plugin-feed": "^4.1.0",
     "gatsby-plugin-gatsby-cloud": "^4.1.0",
@@ -33,7 +34,6 @@
     "typeface-montserrat": "1.1.13"
   },
   "devDependencies": {
-    "@netlify/plugin-gatsby": "^2.0.0-zz-beta.0",
     "acorn": "^8.5.0",
     "babel-eslint": "^10.1.0",
     "gatsby-plugin-netlify": "^4.0.0-next.0",
