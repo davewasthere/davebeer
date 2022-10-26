@@ -1,5 +1,11 @@
 [[plugins]]
 package = "@netlify/plugin-gatsby"
+
 [build]
   publish = "public"
   command = "gatsby build"
+
+[build.environment]
+  NETLIFY_USE_YAR = true
+  YARN_VERSION = 1.22.15
+  YARN_FLAGS = "--no-ignore-optional"
