@@ -1,0 +1,109 @@
+---
+const { frontmatter } = Astro.props;
+import PostDate from '../components/PostDate.astro';
+
+const posts = (await Astro.glob('../pages/posts/*.md')).filter(p => p.frontmatter.published !== false);
+
+posts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
+
+const currentIndex = posts.findIndex((post) => post.url === frontmatter.url);
+
+const nextPost = posts[currentIndex - 1];
+const prevPost = posts[currentIndex + 1];
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{frontmatter.title}</title>
+	</head>
+	<body>
+		<header>
+			<img class="profile" src="/images/profile.png" />
+			<h1>davebeer.com</h1>
+			<a href="/">Home</a>
+		</header>
+		<main>
+			<h1>{frontmatter.title}</h1>
+			{ frontmatter.date && <PostDate dateString={frontmatter.date} /> }
+			<slot />
+		</main>
+		<footer>
+			<div class="prevNext">
+			<div class="prevPost">{ prevPost && <a href={prevPost.url}>{prevPost.frontmatter.title}</a>}</div> 
+			<div class="nextPost">{ nextPost && <a href={nextPost.url}>{nextPost.frontmatter.title}</a>}</div> 
+			</div>
+		</footer>
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	}
+	html {
+		font-family: system-ui, -apple-system,"Segoe UI",Roboto,"Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+		background-color: #F6F6F6;
+	}
+	main, footer, header{
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 1rem;
+	}
+	header {
+		text-align: center;
+	}
+	header h1 {
+		margin: 0;
+        margin-bottom: 1rem;
+	}
+	header a {
+		text-decoration: none;
+		color: #333;
+		border: solid 1px #eee;
+		max-width: 50%;
+		margin: 0 auto;
+	}
+	header img {
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+	}
+	img {
+		max-width: 100%;
+	}
+	.prevNext {
+		display: flex;
+		justify-content: space-between;
+	}
+	.prevNext a, header a {
+		display: block;
+		padding: 1rem;
+		text-decoration: none;
+		color: #333;
+		background-color: #eee;
+	}
+	.prevNext a:hover, header a:hover {
+		text-decoration: underline;
+		background-color: #ddd;
+	}
+	.prevNext > div {
+		width: 50%;
+	}
+	.prevNext > div > a {
+		background-color: #eee;
+		text-align: center;
+	}
+	.nextPost {
+		text-align: right;
+		border-left: 0.25rem solid #f6f6f6;
+	}
+	.prevPost {
+		border-right: 0.25rem solid #f6f6f6;
+	}
+</style>

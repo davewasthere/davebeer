@@ -1,7 +1,0 @@
----
-title: Everyone does social auth wrong
-description: Just something I've noticed while trying to set up Tennis UTR accounts
-date: '2022-08-29'
----
-
-Maybe it needs words?
