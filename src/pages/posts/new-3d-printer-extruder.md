@@ -19,6 +19,6 @@ My daughter and I were trying to do a few little experiments one day, one of whi
     <figcaption>The new metal extruder</figcaption>
 </figure>
 
-The new extruder is just awesome. Beautifully engineered, and so much easier to feed through. And it's might just be me, but it seems to print a lot better too.
+The new extruder is just awesome. Beautifully engineered, and so much easier to feed through. And it might just be me, but it seems to print a lot better too.
 
 So yeah, success.
