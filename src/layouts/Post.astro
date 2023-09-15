@@ -39,6 +39,15 @@ const prevPost = posts[currentIndex + 1];
 			<div class="prevPost">{ prevPost && <a href={prevPost.url}>{prevPost.frontmatter.title}</a>}</div> 
 			<div class="nextPost">{ nextPost && <a href={nextPost.url}>{nextPost.frontmatter.title}</a>}</div> 
 			</div>
+			<div>
+				<script src="https://utteranc.es/client.js"
+				repo="davewasthere/davebeer"
+				issue-term="pathname"
+				theme="github-light"
+				crossorigin="anonymous"
+				async>
+				</script>
+			</div>
 		</footer>
 	</body>
 </html>
