@@ -25,6 +25,6 @@ But we will be getting those new batteries pretty soon. In vehicles. The average
 In Victoria, each of the 5.1 million vehicles is driven, on average 12470km/year. Roughly 34km/day. Once a decent proportion of those vehicles is electric, we'll have ample storage capacity, as long as they're plugged in when they're not being driven (which is most of the time) and support V2G. And what's crazy, is if we had an entirely electric fleet, we'd have 380GWh of storage. That's enough to cover the entire output of the coal plants 4 times over. And they'd only be using roughly 35GWh/day to drive around.
 
 That means you'll pay around $625 on overage per year in power (if paying for it, but if you've got solar, and your car is feeding into the grid a lot of time, you should actually be earning decent money). But you'll also need to pay around $350 in RUC as well.
-But compare that to the 1387.5l of petrol you'll have to buy, at a cost of around $2636 (@ 1.90/l), that's a savings of $1500/year already, not to mention servicing costs being far lower.
+But compare that to the 1387.5l of petrol you'll have to buy, at a cost of around $2442 (@ 1.76/l), that's a savings of $1500/year already, not to mention servicing costs being far lower.
 
 None of this takes into account the overprovisioning of wind and solar, which would be necessary to charge all of these batteries. But it's clear that the future of power in Victoria is not as bleak as some people might think.
