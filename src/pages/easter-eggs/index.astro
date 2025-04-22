@@ -1,0 +1,161 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="davebeer.com">
+
+
+<script>
+
+window.dave1=new Image(); window.dave1.src="https://www.davewasthere.com/travel/images008/dave1.gif";
+		window.dave2=new Image(); window.dave2.src="https://www.davewasthere.com/travel/images008/dave2.gif";
+		window.rizan1=new Image(); window.rizan1.src="https://www.davewasthere.com/travel/images008/rizan1.gif";
+		window.rizan2=new Image(); window.rizan2.src="https://www.davewasthere.com/travel/images008/rizan2.gif";
+		window.rizni1=new Image(); window.rizni1.src="https://www.davewasthere.com/travel/images008/rizni1.gif";
+		window.rizni2=new Image(); window.rizni2.src="https://www.davewasthere.com/travel/images008/rizni2.gif";
+		window.salindra1=new Image(); window.salindra1.src="https://www.davewasthere.com/travel/images008/salindra1.gif";
+		window.salindra2=new Image(); window.salindra2.src="https://www.davewasthere.com/travel/images008/salindra2.gif";
+		window.satinder1=new Image(); window.satinder1.src="https://www.davewasthere.com/travel/images008/satinder1.gif";
+		window.satinder2=new Image(); window.satinder2.src="https://www.davewasthere.com/travel/images008/satinder2.gif";
+
+</script>
+
+
+    <main>
+        <div class="slideshow">
+            <div class="slide" id="slide-container">
+                <div class="card" id="card-0">
+
+						<div>
+							<img src="/images/easter/Secretsquirrel.webp" alt="Secret Squirrel" style="width: 100%; height: auto; max-width: 600px; margin: auto; display: block;" />
+							<p style="text-align: center; font-size: 1.5rem; margin-top: 1rem;">Secret Squirrel</p>
+						</div>
+
+				</div>
+                <div class="card" id="card-1" style="display: none;">
+
+					<div>
+						<img src="/images/easter/skywards.bmp" alt="Skywards" />
+
+						<h1>The Skywards Dev Team</h1>
+
+						<div>
+							<span style="cursor: pointer;" onmouseout="dave.src=dave1.src;" onmouseover="dave.src=dave2.src">
+								<img id="dave" src="https://www.davewasthere.com/travel/images008/dave1.gif" alt="Hi there">
+							</span>
+
+							<span onmouseout="satinder.src=satinder1.src;" onmouseover="satinder.src=satinder2.src;">
+								<img height="120" id="satinder" src="https://www.davewasthere.com/travel/images008/satinder1.gif" width="97" alt="Sat">
+							</span>
+							<span onmouseout="salindra.src=salindra1.src;" onmouseover="salindra.src=salindra2.src;">
+								<img  height="120" id="salindra" src="https://www.davewasthere.com/travel/images008/salindra1.gif" width="86" alt="Salindra">
+							</span>
+							<span onmouseout="rizan.src=rizan1.src;" onmouseover="rizan.src=rizan2.src;">
+								<img  height="120" id="rizan" src="https://www.davewasthere.com/travel/images008/rizan1.gif" width="91" alt="Rizan">
+							</span>
+							<span onmouseout="rizni.src=rizni1.src;" onmouseover="rizni.src=rizni2.src;">
+								<img  height="120" id="rizni" src="https://www.davewasthere.com/travel/images008/rizni1.gif" width="90" alt="Rizni">
+							</span>
+						</div>
+
+					</div>
+
+				</div>
+                <div class="card" id="card-2" style="display: none;">
+
+					<div>
+						<h1>Colin</h1>
+						<span><img src="/images/easter/colin_smaller.gif" width="302" height="211" alt="Colin" /></span>
+					</div>
+
+				</div>
+                <div class="card" id="card-3" style="display: none;">
+
+
+				</div>
+                <div class="card" id="card-4" style="display: none;">
+
+
+				</div>
+            </div>
+            <button class="prev" id="prev-button">&lt;</button>
+            <button class="next" id="next-button">&gt;</button>
+        </div>
+    </main>
+</Layout>
+
+<script>
+    let currentSlide = 0;
+    const totalSlides = 5; // Update this if the number of cards changes
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const prevButton = document.getElementById('prev-button');
+        const nextButton = document.getElementById('next-button');
+
+        prevButton.addEventListener('click', () => {
+            showSlide((currentSlide - 1 + totalSlides) % totalSlides);
+        });
+
+        nextButton.addEventListener('click', () => {
+            showSlide((currentSlide + 1) % totalSlides);
+        });
+
+        function showSlide(index) {
+            document.getElementById(`card-${currentSlide}`).style.display = 'none';
+            currentSlide = index;
+            document.getElementById(`card-${currentSlide}`).style.display = 'block';
+        }
+    });
+
+
+
+
+
+
+
+
+
+</script>
+
+<style>
+	body {
+		margin: 0;
+		background-color: #f0f0f0; /* Light background for better contrast */
+	}
+    .slideshow {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        margin: auto;
+    }
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh; /* Full height of the slideshow */
+        padding: 1rem;
+        background: #f4f4f4;
+        text-align: center;
+        font-size: 1.5rem; /* Adjust font size for better visibility */
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+		font-size: 2rem;
+    }
+    .prev {
+        left: 0;
+    }
+    .next {
+        right: 0;
+    }
+</style>
