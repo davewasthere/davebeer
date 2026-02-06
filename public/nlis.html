@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shearwell Tag Reader</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            min-height: 100vh;
+            padding: 16px;
+        }
+        h1 {
+            font-size: 1.4rem;
+            text-align: center;
+            margin-bottom: 8px;
+            color: #e94560;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 20px;
+        }
+        .status-bar {
+            background: #16213e;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .status-dot {
+            width: 12px; height: 12px;
+            border-radius: 50%;
+            background: #555;
+            flex-shrink: 0;
+        }
+        .status-dot.connected { background: #4ecca3; }
+        .status-dot.connecting { background: #f0a500; animation: pulse 1s infinite; }
+        .status-dot.error { background: #e94560; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+        .status-text { font-size: 0.9rem; }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 12px;
+            transition: background 0.2s;
+        }
+        .btn-connect {
+            background: #e94560;
+            color: white;
+        }
+        .btn-connect:hover { background: #c73651; }
+        .btn-connect:disabled {
+            background: #555;
+            cursor: not-allowed;
+        }
+        .btn-disconnect {
+            background: #333;
+            color: #e94560;
+            border: 1px solid #e94560;
+        }
+
+        .device-info {
+            background: #16213e;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            font-size: 0.85rem;
+            display: none;
+        }
+        .device-info.visible { display: block; }
+        .device-info div { margin: 4px 0; }
+        .device-info .label { color: #888; }
+
+        .tag-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .tag-header h2 { font-size: 1.1rem; }
+        .tag-count {
+            background: #e94560;
+            color: white;
+            border-radius: 12px;
+            padding: 2px 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .tag-list {
+            list-style: none;
+        }
+        .tag-item {
+            background: #16213e;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            animation: slideIn 0.3s ease-out;
+            border-left: 4px solid #4ecca3;
+        }
+        .tag-item.new {
+            border-left-color: #f0a500;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .tag-id {
+            font-family: 'Courier New', monospace;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #4ecca3;
+            word-break: break-all;
+        }
+        .tag-meta {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 4px;
+        }
+
+        .raw-section {
+            margin-top: 20px;
+        }
+        .raw-toggle {
+            background: none;
+            border: 1px solid #444;
+            color: #888;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            width: 100%;
+        }
+        .raw-log {
+            background: #0a0a1a;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.75rem;
+            max-height: 200px;
+            overflow-y: auto;
+            display: none;
+            color: #666;
+        }
+        .raw-log.visible { display: block; }
+        .raw-log div { margin: 2px 0; }
+
+        .no-support {
+            background: #e94560;
+            color: white;
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .clear-btn {
+            background: none;
+            border: none;
+            color: #888;
+            cursor: pointer;
+            font-size: 0.8rem;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🏷️ Shearwell Tag Reader</h1>
+<p class="subtitle">BLE connection to SDL440S wand</p>
+
+<div id="noSupport" class="no-support" style="display:none">
+    Web Bluetooth is not supported in this browser.<br>
+    Use <strong>Chrome on Android</strong> or <strong>Chrome/Edge on desktop</strong>.
+</div>
+
+<div class="status-bar">
+    <div id="statusDot" class="status-dot"></div>
+    <span id="statusText" class="status-text">Disconnected</span>
+</div>
+
+<button id="connectBtn" class="btn btn-connect" onclick="connectToWand()">
+    Connect to Wand
+</button>
+<button id="disconnectBtn" class="btn btn-disconnect" onclick="disconnect()" style="display:none">
+    Disconnect
+</button>
+
+<div id="deviceInfo" class="device-info">
+    <div><span class="label">Device:</span> <span id="devName">—</span></div>
+    <div><span class="label">Firmware:</span> <span id="devFw">—</span></div>
+    <div><span class="label">Module:</span> <span id="devModel">—</span></div>
+</div>
+
+<div class="tag-header">
+    <h2>Tags Scanned</h2>
+    <div>
+        <button class="clear-btn" onclick="clearTags()">Clear</button>
+        <span id="tagCount" class="tag-count">0</span>
+    </div>
+</div>
+
+<ul id="tagList" class="tag-list"></ul>
+
+<div class="raw-section">
+    <button class="raw-toggle" onclick="toggleRaw()">Show Raw Data</button>
+    <div id="rawLog" class="raw-log"></div>
+</div>
+
+<script>
+    // ── Config ──────────────────────────────────────────────────
+    const SERVICE_UUID     = '2456e1b9-26e2-8f83-e744-f34f01e9d701';
+    const CHAR_TX_UUID     = '2456e1b9-26e2-8f83-e744-f34f01e9d703'; // wand → us
+    const CHAR_RX_UUID     = '2456e1b9-26e2-8f83-e744-f34f01e9d704'; // us → wand
+    const DEV_INFO_SERVICE = '0000180a-0000-1000-8000-00805f9b34fb';
+    const FIRMWARE_CHAR    = '00002a26-0000-1000-8000-00805f9b34fb';
+    const MODEL_CHAR       = '00002a24-0000-1000-8000-00805f9b34fb';
+
+    let device = null;
+    let server = null;
+    let txChar = null;
+    let rxChar = null;
+    let lineBuffer = '';
+    let tagCount = 0;
+    const seenTags = new Set();
+
+    // ── Check support ───────────────────────────────────────────
+    if (!navigator.bluetooth) {
+        document.getElementById('noSupport').style.display = 'block';
+        document.getElementById('connectBtn').disabled = true;
+    }
+
+    // ── UI Helpers ──────────────────────────────────────────────
+    function setStatus(state, text) {
+        const dot = document.getElementById('statusDot');
+        dot.className = 'status-dot ' + state;
+        document.getElementById('statusText').textContent = text;
+    }
+
+    function logRaw(msg) {
+        const log = document.getElementById('rawLog');
+        const div = document.createElement('div');
+        const ts = new Date().toLocaleTimeString('en-GB', { hour12: false, fractionalSecondDigits: 3 });
+        div.textContent = `[${ts}] ${msg}`;
+        log.prepend(div);
+        // Keep max 200 entries
+        while (log.children.length > 200) log.removeChild(log.lastChild);
+    }
+
+    function toggleRaw() {
+        document.getElementById('rawLog').classList.toggle('visible');
+    }
+
+    function addTag(tagId) {
+        tagCount++;
+        document.getElementById('tagCount').textContent = tagCount;
+
+        const isNew = !seenTags.has(tagId);
+        seenTags.add(tagId);
+
+        const li = document.createElement('li');
+        li.className = 'tag-item' + (isNew ? '' : ' new');
+        li.innerHTML = `
+            <div class="tag-id">${escapeHtml(tagId)}</div>
+            <div class="tag-meta">#${tagCount} · ${new Date().toLocaleTimeString('en-GB', { hour12: false })}${isNew ? '' : ' · seen before'}</div>
+        `;
+        const list = document.getElementById('tagList');
+        list.prepend(li);
+    }
+
+    function clearTags() {
+        document.getElementById('tagList').innerHTML = '';
+        tagCount = 0;
+        seenTags.clear();
+        document.getElementById('tagCount').textContent = '0';
+    }
+
+    function escapeHtml(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    }
+
+    // ── BLE Connect ─────────────────────────────────────────────
+    async function connectToWand() {
+        try {
+            setStatus('connecting', 'Requesting device...');
+
+            device = await navigator.bluetooth.requestDevice({
+                filters: [
+                    { services: [SERVICE_UUID] },
+                    { namePrefix: 'SDL' }
+                ],
+                optionalServices: [SERVICE_UUID, DEV_INFO_SERVICE]
+            });
+
+            device.addEventListener('gattserverdisconnected', onDisconnected);
+
+            setStatus('connecting', 'Connecting to ' + (device.name || 'device') + '...');
+            server = await device.gatt.connect();
+
+            setStatus('connecting', 'Discovering services...');
+
+            // Read device info
+            try {
+                const devInfoService = await server.getPrimaryService(DEV_INFO_SERVICE);
+                const fwChar = await devInfoService.getCharacteristic(FIRMWARE_CHAR);
+                const fwVal = await fwChar.readValue();
+                document.getElementById('devFw').textContent = new TextDecoder().decode(fwVal);
+
+                const modelChar = await devInfoService.getCharacteristic(MODEL_CHAR);
+                const modelVal = await modelChar.readValue();
+                document.getElementById('devModel').textContent = new TextDecoder().decode(modelVal);
+            } catch (e) {
+                logRaw('Could not read device info: ' + e.message);
+            }
+
+            document.getElementById('devName').textContent = device.name || 'Unknown';
+            document.getElementById('deviceInfo').classList.add('visible');
+
+            // Get serial service
+            const service = await server.getPrimaryService(SERVICE_UUID);
+            const chars = await service.getCharacteristics();
+
+            logRaw('Found ' + chars.length + ' characteristics');
+
+            for (const ch of chars) {
+                const props = [];
+                if (ch.properties.read) props.push('Read');
+                if (ch.properties.write) props.push('Write');
+                if (ch.properties.writeWithoutResponse) props.push('WriteNoResp');
+                if (ch.properties.notify) props.push('Notify');
+                if (ch.properties.indicate) props.push('Indicate');
+                logRaw(`  Char ${ch.uuid} [${props.join(', ')}]`);
+            }
+
+            // Subscribe to notifications on both characteristics
+            for (const ch of chars) {
+                if (ch.properties.notify || ch.properties.indicate) {
+                    try {
+                        await ch.startNotifications();
+                        ch.addEventListener('characteristicvaluechanged', onDataReceived);
+                        logRaw(`Subscribed to ${ch.uuid}`);
+                    } catch (e) {
+                        logRaw(`Subscribe ${ch.uuid} failed: ${e.message}`);
+                    }
+                }
+
+                if (ch.uuid === CHAR_TX_UUID) txChar = ch;
+                if (ch.uuid === CHAR_RX_UUID) rxChar = ch;
+            }
+
+            setStatus('connected', 'Connected to ' + (device.name || 'device'));
+            document.getElementById('connectBtn').style.display = 'none';
+            document.getElementById('disconnectBtn').style.display = 'block';
+
+            logRaw('Ready — scan a tag!');
+
+        } catch (err) {
+            console.error(err);
+            setStatus('error', 'Error: ' + err.message);
+            logRaw('Connection error: ' + err.message);
+        }
+    }
+
+    // ── Data Received ───────────────────────────────────────────
+    function onDataReceived(event) {
+        const value = event.target.value;
+        const bytes = new Uint8Array(value.buffer);
+        const text = new TextDecoder().decode(bytes);
+        const hex = Array.from(bytes).map(b => b.toString(16).padStart(2, '0').toUpperCase()).join('-');
+
+        logRaw(`RX [${hex}] "${text}"`);
+
+        // Buffer lines (wand sends data terminated by \r\n)
+        lineBuffer += text;
+        let lines = lineBuffer.split(/\r?\n/);
+        lineBuffer = lines.pop(); // keep incomplete last segment
+
+        for (const line of lines) {
+            const trimmed = line.trim();
+            if (trimmed.length > 0) {
+                logRaw('TAG: ' + trimmed);
+                addTag(trimmed);
+            }
+        }
+    }
+
+    // ── Disconnect ──────────────────────────────────────────────
+    function disconnect() {
+        if (device && device.gatt.connected) {
+            device.gatt.disconnect();
+        }
+    }
+
+    function onDisconnected() {
+        setStatus('', 'Disconnected');
+        document.getElementById('connectBtn').style.display = 'block';
+        document.getElementById('disconnectBtn').style.display = 'none';
+        document.getElementById('deviceInfo').classList.remove('visible');
+        txChar = null;
+        rxChar = null;
+        lineBuffer = '';
+        logRaw('Device disconnected');
+    }
+</script>
+
+</body>
+</html>
