@@ -1,0 +1,212 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import Layout from '../../layouts/Layout.astro';
+
+const dir = path.join(process.cwd(), 'public', 'images', 'abc');
+
+// Title page first, then the letters in alphabetical order.
+const files = fs
+	.readdirSync(dir)
+	.filter((f) => /\.(png|jpe?g|webp|gif)$/i.test(f))
+	.sort((a, b) => {
+		if (a.startsWith('_')) return -1;
+		if (b.startsWith('_')) return 1;
+		return a.localeCompare(b);
+	});
+
+const pages = files.map((file) => ({
+	src: `/images/abc/${file}`,
+	label: path.parse(file).name.replace(/^_/, '').toUpperCase(),
+}));
+---
+
+<Layout title="ABC — davebeer.com">
+	<main class="book" data-total={pages.length}>
+		<div class="stage">
+			{
+				pages.map((page, i) => (
+					<img
+						class="page"
+						src={page.src}
+						alt={page.label}
+						data-index={i}
+						hidden={i !== 0}
+						loading={i < 2 ? 'eager' : 'lazy'}
+						decoding="async"
+					/>
+				))
+			}
+		</div>
+
+		<button class="turn prev" id="prev" aria-label="Previous page">&lsaquo;</button>
+		<button class="turn next" id="next" aria-label="Next page">&rsaquo;</button>
+
+		<p class="counter" id="counter" aria-live="polite"></p>
+	</main>
+</Layout>
+
+<script>
+	const book = document.querySelector('.book') as HTMLElement;
+	const pages = Array.from(document.querySelectorAll<HTMLImageElement>('.page'));
+	const prev = document.getElementById('prev') as HTMLButtonElement;
+	const next = document.getElementById('next') as HTMLButtonElement;
+	const counter = document.getElementById('counter') as HTMLElement;
+
+	let current = 0;
+
+	function show(index: number) {
+		const clamped = Math.max(0, Math.min(index, pages.length - 1));
+		if (clamped === current) return;
+
+		pages[current].hidden = true;
+		current = clamped;
+		const page = pages[current];
+		page.hidden = false;
+		page.classList.remove('turning');
+		// Restart the turn animation.
+		void page.offsetWidth;
+		page.classList.add('turning');
+
+		// Warm the next page so the turn feels instant.
+		pages[current + 1]?.setAttribute('loading', 'eager');
+
+		update();
+	}
+
+	function update() {
+		prev.disabled = current === 0;
+		next.disabled = current === pages.length - 1;
+		counter.textContent = `${current + 1} / ${pages.length}`;
+	}
+
+	prev.addEventListener('click', () => show(current - 1));
+	next.addEventListener('click', () => show(current + 1));
+
+	// Click the left or right half of the page to turn it.
+	book.addEventListener('click', (event) => {
+		if ((event.target as HTMLElement).closest('.turn')) return;
+		const forward = event.clientX > window.innerWidth / 2;
+		show(forward ? current + 1 : current - 1);
+	});
+
+	document.addEventListener('keydown', (event) => {
+		if (event.key === 'ArrowRight' || event.key === ' ') show(current + 1);
+		if (event.key === 'ArrowLeft') show(current - 1);
+		if (event.key === 'Home') show(0);
+		if (event.key === 'End') show(pages.length - 1);
+	});
+
+	// Swipe on touch devices.
+	let startX = 0;
+	book.addEventListener('touchstart', (e) => (startX = e.changedTouches[0].clientX), { passive: true });
+	book.addEventListener(
+		'touchend',
+		(e) => {
+			const dx = e.changedTouches[0].clientX - startX;
+			if (Math.abs(dx) > 40) show(dx < 0 ? current + 1 : current - 1);
+		},
+		{ passive: true }
+	);
+
+	update();
+</script>
+
+<style>
+	body {
+		margin: 0;
+	}
+
+	.book {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-sizing: border-box;
+		height: 100vh;
+		height: 100dvh;
+		padding: 2rem 1rem 3.5rem;
+		background: #f0f0f0;
+		cursor: pointer;
+		user-select: none;
+		overflow: hidden;
+	}
+
+	.stage {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.page {
+		max-width: min(100%, 900px);
+		max-height: calc(100vh - 6rem);
+		width: auto;
+		height: auto;
+		border-radius: 6px;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+	}
+
+	.page.turning {
+		animation: turn 260ms ease-out;
+	}
+
+	@keyframes turn {
+		from {
+			opacity: 0;
+			transform: perspective(1200px) rotateY(-8deg) translateX(2%);
+		}
+		to {
+			opacity: 1;
+			transform: none;
+		}
+	}
+
+	.turn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background: rgba(0, 0, 0, 0.45);
+		color: white;
+		border: none;
+		padding: 0.75rem 1.1rem;
+		font-size: 2rem;
+		line-height: 1;
+		cursor: pointer;
+		border-radius: 4px;
+	}
+
+	.turn:hover:not(:disabled) {
+		background: rgba(0, 0, 0, 0.7);
+	}
+
+	.turn:disabled {
+		opacity: 0.25;
+		cursor: default;
+	}
+
+	.prev {
+		left: 0.5rem;
+	}
+
+	.next {
+		right: 0.5rem;
+	}
+
+	.counter {
+		position: absolute;
+		bottom: 1rem;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: 0;
+		font-size: 0.9rem;
+		color: #666;
+		letter-spacing: 0.08em;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.page.turning {
+			animation: none;
+		}
+	}
+</style>
