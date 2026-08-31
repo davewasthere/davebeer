@@ -15,13 +15,10 @@ Sure, there'll be some differences. There's probably a lot of waste heat being l
 
 Without boring you with the methodology, here are the results:
 
-<table>
-	<thead><tr><th>Method</th><th>kWh</th><th>Cost</th></tr></thead>
-	<tbody>
-		<tr><td>Electric Kettle</td><td>0.1</td><td>1.52p</td></tr>
-		<tr><td>Pot on gas hob</td><td>0.167</td><td>0.62p</td></tr>
-	</tbody>
-</table>
+| Method          |   kWh |  Cost |
+| --------------- | ----: | ----: |
+| Electric Kettle |   0.1 | 1.52p |
+| Pot on gas hob  | 0.167 | 0.62p |
 
 So, boiling the water on the hob took a little more energy, but it's a lot cheaper per kWh so ends up being the best option overall. And since I drink around 10 cups a day (well, a couple of coffees and a lot of Roibos), then it looks like I can buy a nice stove-top whistling kettle which will pay for itself in a year. Either that, or get cracking on my solar-powered samovar and get my hot water for free.
 

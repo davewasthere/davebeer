@@ -96,6 +96,22 @@ const prevPost = posts[currentIndex + 1];
 		border-radius: 4px;
 		padding: 0.1em 0.35em;
 	}
+	.post-body table {
+		border-collapse: collapse;
+		margin: 1.5rem 0;
+		font-family: var(--font-sans);
+		font-size: 0.95rem;
+	}
+	.post-body th,
+	.post-body td {
+		padding: 0.5rem 1rem 0.5rem 0;
+		border-bottom: 1px solid var(--border);
+		text-align: left;
+	}
+	.post-body th {
+		font-weight: 650;
+		border-bottom-width: 2px;
+	}
 	.post-body hr {
 		border: none;
 		border-top: 1px solid var(--border);
