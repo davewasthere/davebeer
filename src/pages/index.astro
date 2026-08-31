@@ -1,38 +1,43 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import SiteHeader from '../components/SiteHeader.astro';
 
 const posts = await Astro.glob('./posts/*.md');
 posts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
 ---
 
-<Layout title="davebeer.com">
+<Layout title="Dave Beer" description="Occasional writing on technology, travel and whatever else takes my fancy.">
+	<SiteHeader />
 	<main>
-		<h1>davebeer.com</h1>
+		<p class="intro">Occasional writing on technology, travel and whatever else takes my fancy.</p>
 
-		{ posts.filter(p => p.frontmatter.published !== false).map((post) => {
-			return (
-			<Card date={post.frontmatter.date} href={post.url} title={post.frontmatter.title} body={post.frontmatter.description}></Card>
-			)
-		}) }
+		<div class="post-list">
+			{ posts.filter(p => p.frontmatter.published !== false).map((post) => {
+				return (
+				<Card date={post.frontmatter.date} href={post.url ?? ''} title={post.frontmatter.title} body={post.frontmatter.description}></Card>
+				)
+			}) }
+		</div>
 
 	</main>
 </Layout>
 
 <style>
 	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 90ch;
+		margin: 0 auto;
+		padding: 1.5rem 1.25rem 4rem;
+		max-width: 42rem;
 	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-		margin-bottom: 1.5rem;
+	.intro {
+		color: var(--muted);
+		font-size: 1.05rem;
+		line-height: 1.6;
+		margin: 0.75rem 0 1.25rem;
+		max-width: 34rem;
 	}
-	.post {
-		text-decoration: none;
-		color: #333;
+	.post-list {
+		display: flex;
+		flex-direction: column;
 	}
 </style>

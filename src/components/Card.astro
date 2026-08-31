@@ -11,45 +11,44 @@ import PostDate from './PostDate.astro';
 const { href, title, body, date } = Astro.props;
 ---
 
-<div class="link-card">
+<article class="entry">
 	<a href={href}>
-		<h2>
-			<PostDate dateString={date}></PostDate> -{" "}
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
+		<PostDate dateString={date}></PostDate>
+		<h2>{title}</h2>
+		{ body && <p>{body}</p> }
 	</a>
-</div>
+</article>
+
 <style>
-	.link-card {
-		background-color: #eee;
-		margin-bottom: 1rem;
+	.entry {
+		border-top: 1px solid var(--border);
+	}
+	.entry:last-child {
+		border-bottom: 1px solid var(--border);
 	}
 
-	.link-card > a {
+	.entry > a {
 		display: block;
-		padding: 0.75rem;
+		padding: 1.15rem 0;
 		text-decoration: none;
-		color: #111;
-	}	
-
-	.link-card h2 {
-		margin: 0;
-		padding: 0;
-		font-size: 1rem;
-		font-weight: 600;
+		color: inherit;
 	}
 
-	.link-card:hover {
-		background-color: #ddd;
+	.entry h2 {
+		margin: 0.2rem 0 0;
+		font-size: 1.15rem;
+		font-weight: 650;
+		letter-spacing: -0.01em;
+		line-height: 1.35;
 	}
-	
+
+	.entry a:hover h2 {
+		color: var(--accent);
+	}
+
 	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-		color: #444;
+		margin: 0.35rem 0 0;
+		color: var(--muted);
+		line-height: 1.55;
 	}
 </style>

@@ -1,0 +1,46 @@
+---
+export interface Props {
+	compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+---
+
+<header class:list={['site-header', { compact }]}>
+	<a class="identity" href="/">
+		<img class="profile" src="/images/profile.png" alt="Dave Beer" width="56" height="56" />
+		<span class="site-name">Dave Beer</span>
+	</a>
+</header>
+
+<style>
+	.site-header {
+		max-width: 42rem;
+		margin: 0 auto;
+		padding: 2.5rem 1.25rem 0;
+	}
+	.identity {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.85rem;
+		text-decoration: none;
+		color: inherit;
+	}
+	.profile {
+		border-radius: 50%;
+		width: 56px;
+		height: 56px;
+	}
+	.compact .profile {
+		width: 40px;
+		height: 40px;
+	}
+	.site-name {
+		font-weight: 700;
+		font-size: 1.1rem;
+		letter-spacing: -0.01em;
+	}
+	.identity:hover .site-name {
+		color: var(--accent);
+	}
+</style>
