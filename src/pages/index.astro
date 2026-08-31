@@ -12,6 +12,8 @@ posts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.d
 	<main>
 		<p class="intro">Occasional writing on technology, travel and whatever else takes my fancy.</p>
 
+		<p class="page-link"><a href="/fire-preparedness">Fire preparedness — Bushfire Places of Last Resort around Bendigo &rarr;</a></p>
+
 		<div class="post-list">
 			{ posts.filter(p => p.frontmatter.published !== false).map((post) => {
 				return (
@@ -35,6 +37,18 @@ posts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.d
 		line-height: 1.6;
 		margin: 0.75rem 0 1.25rem;
 		max-width: 34rem;
+	}
+	.page-link {
+		margin: 0 0 2.5rem;
+	}
+	.page-link a {
+		color: var(--accent);
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 0.95rem;
+	}
+	.page-link a:hover {
+		text-decoration: underline;
 	}
 	.post-list {
 		display: flex;

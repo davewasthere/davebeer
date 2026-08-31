@@ -1,0 +1,147 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import 'leaflet/dist/leaflet.css';
+
+const places = [
+	{ name: "Axedale Primary School Oval", lat: -36.7860, lng: 144.5009 },
+	{ name: "Lansell Square car park", lat: -36.8104, lng: 144.2424 },
+	{ name: "Queen Elizabeth Oval", lat: -36.7557, lng: 144.2758 },
+	{ name: "Canterbury Park car park and events area", lat: -36.7142, lng: 144.2556 },
+	{ name: "Bendigo Showgrounds", lat: -36.7373, lng: 144.2713 },
+	{ name: "Maiden Gully Primary School basketball courts", lat: -36.7442, lng: 144.2097 },
+	{ name: "Lord's Raceway, Junortoun", lat: -36.7691, lng: 144.3345 },
+	{ name: "Strathfieldsaye Community Hub, Club Court", lat: -36.8022, lng: 144.3518 },
+	{ name: "Dower Park, Kangaroo Flat", lat: -36.7930, lng: 144.2391 },
+	{ name: "Redesdale Recreation Reserve Oval", lat: -37.0222, lng: 144.5307 },
+	{ name: "Barrack Reserve picnic area, Heathcote", lat: -36.9225, lng: 144.7107 }
+];
+---
+
+<Layout title="Fire preparedness - davebeer.com" description="Bushfire Places of Last Resort in and around Greater Bendigo.">
+	<SiteHeader compact />
+	<main>
+		<h1>Fire preparedness</h1>
+		<p class="lead">
+			This map shows the Bushfire Places of Last Resort (BPLR) in and around Greater Bendigo.
+		</p>
+
+		<div class="warning">
+			<p><strong>A BPLR is a place of last resort.</strong> It does not guarantee your safety. Use it only when all other plans have failed. To leave early is always the safest option.</p>
+		</div>
+
+		<div id="map"></div>
+		<script type="application/json" id="bplr-data" set:html={JSON.stringify(places)}></script>
+
+		<h2>What to bring</h2>
+		<p>A BPLR has no supplies. If you shelter at a BPLR, bring:</p>
+		<ul class="bring">
+			<li>Food and water</li>
+			<li>Protective clothing</li>
+			<li>Pet food</li>
+			<li>Mobile phone</li>
+			<li>Radio</li>
+			<li>First aid kit and medications</li>
+		</ul>
+
+		<h2>More information</h2>
+		<p>
+			Monitor warnings at <a href="https://emergency.vic.gov.au/">VicEmergency</a>.
+			Prepare your fire plan with the <a href="https://www.cfa.vic.gov.au/plan-prepare">CFA</a>.
+		</p>
+	</main>
+</Layout>
+
+<script>
+	import L from 'leaflet';
+
+	const data = JSON.parse(document.getElementById('bplr-data')!.textContent!) as
+		{ name: string; lat: number; lng: number }[];
+
+	const map = L.map('map', { scrollWheelZoom: false });
+
+	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+
+	const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#b5502c';
+
+	data.forEach((place) =>
+		L.circleMarker([place.lat, place.lng], {
+			radius: 8,
+			color: accent,
+			weight: 2,
+			fillColor: accent,
+			fillOpacity: 0.5
+		})
+			.bindPopup(place.name)
+			.bindTooltip(place.name, { direction: 'top', offset: [0, -8], className: 'bplr-label' })
+			.addTo(map)
+	);
+
+	map.fitBounds(L.latLngBounds(data.map((p) => [p.lat, p.lng])), { padding: [30, 30] });
+</script>
+
+<style>
+	main {
+		margin: 0 auto;
+		padding: 1rem 1.25rem 4rem;
+		max-width: 42rem;
+	}
+	h1 {
+		font-size: 2rem;
+		font-weight: 750;
+		letter-spacing: -0.02em;
+		margin: 1.5rem 0 0.5rem;
+	}
+	h2 {
+		font-size: 1.25rem;
+		font-weight: 650;
+		letter-spacing: -0.01em;
+		margin: 2rem 0 0.75rem;
+	}
+	p {
+		line-height: 1.65;
+	}
+	.lead {
+		color: var(--muted);
+		margin-top: 0;
+	}
+	.warning {
+		border-left: 3px solid var(--accent);
+		background-color: var(--surface);
+		border-radius: 0 6px 6px 0;
+		padding: 0.25rem 1.25rem;
+		margin: 1.5rem 0;
+	}
+	#map {
+		height: 420px;
+		border: 1px solid var(--border);
+		border-radius: 8px;
+		margin: 1.5rem 0;
+	}
+	:global(.bplr-label) {
+		background-color: var(--bg);
+		color: var(--text);
+		border: 1px solid var(--border);
+		border-radius: 4px;
+		padding: 2px 7px;
+		font-family: var(--font-sans);
+		font-size: 0.72rem;
+		font-weight: 600;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+	}
+	:global(.bplr-label::before) {
+		display: none;
+	}
+	.bring {
+		line-height: 1.8;
+		padding-left: 1.25rem;
+	}
+	a {
+		color: var(--accent);
+		text-decoration-thickness: 1px;
+		text-underline-offset: 2px;
+	}
+</style>
