@@ -1,0 +1,325 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import 'leaflet/dist/leaflet.css';
+---
+
+<Layout title="GPS - davebeer.com" description="Show your current GPS position and the accuracy of the fix.">
+	<SiteHeader compact />
+	<main>
+		<h1>GPS</h1>
+		<p class="lead">
+			Your current position from the browser Geolocation API, and how accurate the fix is.
+			Nothing is sent anywhere. The position stays in your browser.
+		</p>
+
+		<div class="controls">
+			<button id="start" type="button">Start</button>
+			<button id="stop" type="button" disabled>Stop</button>
+			<span id="status" class="status">Idle</span>
+		</div>
+
+		<div id="error" class="error" hidden></div>
+
+		<div class="accuracy-card" id="accuracy-card">
+			<div class="label">Accuracy (95% radius)</div>
+			<div class="accuracy-value"><span id="accuracy">–</span><span class="unit">m</span></div>
+			<div class="accuracy-note" id="accuracy-note">Waiting for a fix.</div>
+		</div>
+
+		<dl class="readout">
+			<div><dt>Latitude</dt><dd id="lat">–</dd></div>
+			<div><dt>Longitude</dt><dd id="lng">–</dd></div>
+			<div><dt>Altitude</dt><dd id="alt">–</dd></div>
+			<div><dt>Altitude accuracy</dt><dd id="altacc">–</dd></div>
+			<div><dt>Heading</dt><dd id="heading">–</dd></div>
+			<div><dt>Speed</dt><dd id="speed">–</dd></div>
+			<div><dt>Fix time</dt><dd id="time">–</dd></div>
+			<div><dt>Fixes received</dt><dd id="count">0</dd></div>
+		</dl>
+
+		<div id="map"></div>
+
+		<p class="links">
+			<a id="osm-link" href="#" target="_blank" rel="noopener" hidden>Open in OpenStreetMap</a>
+			<a id="gmaps-link" href="#" target="_blank" rel="noopener" hidden>Open in Google Maps</a>
+		</p>
+
+		<h2>About accuracy</h2>
+		<p>
+			The accuracy value is the radius in metres of a circle around the reported point.
+			There is a 95% chance that your true position is inside that circle.
+			A smaller number is better. A phone with a clear sky view usually reports 3 to 10 metres.
+			A laptop with only Wi-Fi positioning often reports tens or hundreds of metres.
+			The first fix is often coarse. Leave the page running and the fix usually improves.
+		</p>
+	</main>
+</Layout>
+
+<script>
+	import L from 'leaflet';
+
+	const byId = (id: string) => document.getElementById(id)!;
+	const startBtn = byId('start') as HTMLButtonElement;
+	const stopBtn = byId('stop') as HTMLButtonElement;
+	const statusEl = byId('status');
+	const errorEl = byId('error');
+	const card = byId('accuracy-card');
+
+	let watchId: number | null = null;
+	let fixes = 0;
+
+	const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#b5502c';
+
+	const map = L.map('map', { scrollWheelZoom: false }).setView([-36.757, 144.278], 4);
+	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+
+	let marker: L.CircleMarker | null = null;
+	let circle: L.Circle | null = null;
+	let firstFix = true;
+
+	function fmt(n: number | null | undefined, digits: number, unit = ''): string {
+		if (n === null || n === undefined || Number.isNaN(n)) return '–';
+		return n.toFixed(digits) + unit;
+	}
+
+	function grade(acc: number): { cls: string; note: string } {
+		if (acc <= 10) return { cls: 'good', note: 'Excellent. Typical of a GPS fix with clear sky.' };
+		if (acc <= 50) return { cls: 'ok', note: 'Usable. Likely GPS with obstructions, or good Wi-Fi positioning.' };
+		if (acc <= 500) return { cls: 'poor', note: 'Coarse. Probably Wi-Fi or cell positioning.' };
+		return { cls: 'bad', note: 'Very coarse. Probably IP-based location only.' };
+	}
+
+	function showError(msg: string) {
+		errorEl.textContent = msg;
+		errorEl.hidden = false;
+	}
+
+	function onPosition(pos: GeolocationPosition) {
+		const c = pos.coords;
+		fixes += 1;
+		errorEl.hidden = true;
+		statusEl.textContent = 'Watching';
+
+		const { cls, note } = grade(c.accuracy);
+		card.className = 'accuracy-card ' + cls;
+		byId('accuracy').textContent = c.accuracy < 10 ? c.accuracy.toFixed(1) : Math.round(c.accuracy).toString();
+		byId('accuracy-note').textContent = note;
+
+		byId('lat').textContent = c.latitude.toFixed(6);
+		byId('lng').textContent = c.longitude.toFixed(6);
+		byId('alt').textContent = fmt(c.altitude, 1, ' m');
+		byId('altacc').textContent = fmt(c.altitudeAccuracy, 1, ' m');
+		byId('heading').textContent = fmt(c.heading, 0, '°');
+		byId('speed').textContent =
+			c.speed === null ? '–' : `${c.speed.toFixed(1)} m/s (${(c.speed * 3.6).toFixed(1)} km/h)`;
+		byId('time').textContent = new Date(pos.timestamp).toLocaleTimeString();
+		byId('count').textContent = String(fixes);
+
+		const osm = byId('osm-link') as HTMLAnchorElement;
+		osm.href = `https://www.openstreetmap.org/?mlat=${c.latitude}&mlon=${c.longitude}#map=17/${c.latitude}/${c.longitude}`;
+		osm.hidden = false;
+		const gm = byId('gmaps-link') as HTMLAnchorElement;
+		gm.href = `https://www.google.com/maps?q=${c.latitude},${c.longitude}`;
+		gm.hidden = false;
+
+		const latlng: L.LatLngExpression = [c.latitude, c.longitude];
+		if (!marker || !circle) {
+			marker = L.circleMarker(latlng, {
+				radius: 6, color: accent, weight: 2, fillColor: accent, fillOpacity: 0.9
+			}).addTo(map);
+			circle = L.circle(latlng, {
+				radius: c.accuracy, color: accent, weight: 1, fillColor: accent, fillOpacity: 0.15
+			}).addTo(map);
+		} else {
+			marker.setLatLng(latlng);
+			circle.setLatLng(latlng);
+			circle.setRadius(c.accuracy);
+		}
+		if (firstFix) {
+			map.fitBounds(circle.getBounds(), { padding: [30, 30], maxZoom: 18 });
+			firstFix = false;
+		}
+	}
+
+	function onError(err: GeolocationPositionError) {
+		const messages: Record<number, string> = {
+			1: 'Permission denied. Allow location access for this site and press Start again.',
+			2: 'Position unavailable. The device could not get a fix.',
+			3: 'Timed out waiting for a fix.'
+		};
+		showError(messages[err.code] ?? err.message);
+		statusEl.textContent = 'Error';
+		if (err.code === 1) stop();
+	}
+
+	function start() {
+		if (!('geolocation' in navigator)) {
+			showError('This browser does not support geolocation.');
+			return;
+		}
+		if (!window.isSecureContext) {
+			showError('Geolocation needs a secure context (https or localhost).');
+			return;
+		}
+		errorEl.hidden = true;
+		statusEl.textContent = 'Requesting…';
+		startBtn.disabled = true;
+		stopBtn.disabled = false;
+		watchId = navigator.geolocation.watchPosition(onPosition, onError, {
+			enableHighAccuracy: true,
+			maximumAge: 0,
+			timeout: 30000
+		});
+	}
+
+	function stop() {
+		if (watchId !== null) {
+			navigator.geolocation.clearWatch(watchId);
+			watchId = null;
+		}
+		startBtn.disabled = false;
+		stopBtn.disabled = true;
+		if (statusEl.textContent !== 'Error') statusEl.textContent = 'Stopped';
+	}
+
+	startBtn.addEventListener('click', start);
+	stopBtn.addEventListener('click', stop);
+	start();
+</script>
+
+<style>
+	main {
+		margin: 0 auto;
+		padding: 1rem 1.25rem 4rem;
+		max-width: 42rem;
+	}
+	h1 {
+		font-size: 2rem;
+		font-weight: 750;
+		letter-spacing: -0.02em;
+		margin: 1.5rem 0 0.5rem;
+	}
+	h2 {
+		font-size: 1.25rem;
+		font-weight: 650;
+		letter-spacing: -0.01em;
+		margin: 2rem 0 0.75rem;
+	}
+	p {
+		line-height: 1.65;
+	}
+	.lead {
+		color: var(--muted);
+		margin-top: 0;
+	}
+	.controls {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		margin: 1.25rem 0;
+	}
+	button {
+		font: inherit;
+		font-weight: 600;
+		padding: 0.45rem 1rem;
+		border-radius: 6px;
+		border: 1px solid var(--border);
+		background-color: var(--surface);
+		color: var(--text);
+		cursor: pointer;
+	}
+	button:disabled {
+		opacity: 0.5;
+		cursor: default;
+	}
+	.status {
+		color: var(--muted);
+		font-size: 0.9rem;
+	}
+	.error {
+		border-left: 3px solid var(--accent);
+		background-color: var(--surface);
+		border-radius: 0 6px 6px 0;
+		padding: 0.75rem 1.25rem;
+		margin: 1rem 0;
+	}
+	.accuracy-card {
+		border: 1px solid var(--border);
+		border-radius: 8px;
+		padding: 1rem 1.25rem;
+		margin: 1rem 0;
+		background-color: var(--surface);
+		border-left-width: 6px;
+	}
+	.accuracy-card.good { border-left-color: #2e8b57; }
+	.accuracy-card.ok   { border-left-color: #c9a227; }
+	.accuracy-card.poor { border-left-color: #d9782d; }
+	.accuracy-card.bad  { border-left-color: #c0392b; }
+	.label {
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		color: var(--muted);
+	}
+	.accuracy-value {
+		font-family: var(--font-mono);
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1.1;
+		font-variant-numeric: tabular-nums;
+	}
+	.unit {
+		font-size: 1.25rem;
+		font-weight: 500;
+		color: var(--muted);
+		margin-left: 0.25rem;
+	}
+	.accuracy-note {
+		color: var(--muted);
+		font-size: 0.9rem;
+		margin-top: 0.25rem;
+	}
+	.readout {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+		gap: 0.5rem 1.5rem;
+		margin: 1.5rem 0;
+	}
+	.readout div {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		border-bottom: 1px solid var(--border);
+		padding: 0.4rem 0;
+	}
+	dt {
+		color: var(--muted);
+	}
+	dd {
+		margin: 0;
+		font-family: var(--font-mono);
+		font-variant-numeric: tabular-nums;
+		text-align: right;
+	}
+	#map {
+		height: 360px;
+		border: 1px solid var(--border);
+		border-radius: 8px;
+		margin: 1.5rem 0 0.75rem;
+	}
+	.links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+		margin-top: 0;
+	}
+	a {
+		color: var(--accent);
+		text-decoration-thickness: 1px;
+		text-underline-offset: 2px;
+	}
+</style>
